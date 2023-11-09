@@ -464,6 +464,19 @@
       "total": 2500,
       "pic": "p43.jpg",
       "id": 1
+    },
+    {
+      "userid": "2",
+      "productid": "18",
+      "name": "Male Jeans Slim  Fit",
+      "brand": "Mufti",
+      "color": "Black",
+      "size": "36",
+      "price": 1716,
+      "qty": 1,
+      "total": 1716,
+      "pic": "p16.jpg",
+      "id": 2
     }
   ],
   "wishlist": [
