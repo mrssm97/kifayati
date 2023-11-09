@@ -2,7 +2,6 @@
   "name": "bestcart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mr-ssm-97.github.io",
   "proxy": "http://localhost:8000",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "",
