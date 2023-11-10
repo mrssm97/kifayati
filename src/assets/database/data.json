@@ -464,6 +464,32 @@
       "total": 2500,
       "pic": "p43.jpg",
       "id": 1
+    },
+    {
+      "userid": "2",
+      "productid": "6",
+      "name": "Male Shirt Nike",
+      "brand": "Nike",
+      "color": "Green Check",
+      "size": "XL",
+      "price": 450,
+      "qty": 1,
+      "total": 450,
+      "pic": "p25.jpg",
+      "id": 2
+    },
+    {
+      "userid": "2",
+      "productid": "18",
+      "name": "Male Jeans Slim  Fit",
+      "brand": "Mufti",
+      "color": "Black",
+      "size": "36",
+      "price": 1716,
+      "qty": 1,
+      "total": 1716,
+      "pic": "p16.jpg",
+      "id": 3
     }
   ],
   "wishlist": [
@@ -480,6 +506,17 @@
       "price": 1716,
       "pic": "p16.jpg",
       "id": 1
+    },
+    {
+      "userid": "2",
+      "productid": "12",
+      "name": "Female Tshirt White Mufti",
+      "brand": "Mufti",
+      "color": "White",
+      "size": "M",
+      "price": 375,
+      "pic": "p23.jpg",
+      "id": 2
     }
   ],
   "checkout": [
