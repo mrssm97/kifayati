@@ -464,19 +464,6 @@
       "total": 2500,
       "pic": "p43.jpg",
       "id": 1
-    },
-    {
-      "userid": "2",
-      "productid": "18",
-      "name": "Male Jeans Slim  Fit",
-      "brand": "Mufti",
-      "color": "Black",
-      "size": "36",
-      "price": 1716,
-      "qty": 1,
-      "total": 1716,
-      "pic": "p16.jpg",
-      "id": 2
     }
   ],
   "wishlist": [
@@ -563,6 +550,32 @@
         }
       ],
       "id": 2
+    },
+    {
+      "userid": "2",
+      "paymentmode": "COD",
+      "paymentstatus": "Pending",
+      "orderstatus": "Order is Placed",
+      "shipping": 0,
+      "subtotal": 1716,
+      "total": 1716,
+      "date": "2023-11-10T06:37:08.154Z",
+      "products": [
+        {
+          "userid": "2",
+          "productid": "18",
+          "name": "Male Jeans Slim  Fit",
+          "brand": "Mufti",
+          "color": "Black",
+          "size": "36",
+          "price": 1716,
+          "qty": 1,
+          "total": 1716,
+          "pic": "p16.jpg",
+          "id": 2
+        }
+      ],
+      "id": 3
     }
   ],
   "newsletter": [

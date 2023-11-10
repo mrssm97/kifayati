@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kifayati/static/css/main.7c5fca8a.css",
+    "main.js": "/kifayati/static/js/main.e5913a14.js",
+    "index.html": "/kifayati/index.html",
+    "main.7c5fca8a.css.map": "/kifayati/static/css/main.7c5fca8a.css.map",
+    "main.e5913a14.js.map": "/kifayati/static/js/main.e5913a14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c5fca8a.css",
+    "static/js/main.e5913a14.js"
+  ]
+}
