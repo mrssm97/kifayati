@@ -423,7 +423,7 @@
       "name": "Sanjay kumar",
       "email": "ssm.mrsanjay97@gmail.com",
       "phone": "7542006442",
-      "address": "D-7, Sector 55",
+      "address": "D-7, Sector 56\n",
       "pin": "201307",
       "city": "Noida",
       "state": "Uttar Pradesh",
@@ -613,6 +613,58 @@
         }
       ],
       "id": 3
+    },
+    {
+      "userid": "1",
+      "paymentmode": "COD",
+      "paymentstatus": "Pending",
+      "orderstatus": "Order is Placed",
+      "shipping": 0,
+      "subtotal": 1716,
+      "total": 1716,
+      "date": "2023-11-13T06:14:15.583Z",
+      "products": [
+        {
+          "userid": "1",
+          "productid": "18",
+          "name": "Male Jeans Slim  Fit",
+          "brand": "Mufti",
+          "color": "Black",
+          "size": "36",
+          "price": 1716,
+          "qty": 1,
+          "total": 1716,
+          "pic": "p16.jpg",
+          "id": 4
+        }
+      ],
+      "id": 4
+    },
+    {
+      "userid": "1",
+      "paymentmode": "NetBanking/Card/UPI",
+      "paymentstatus": "Pending",
+      "orderstatus": "Order is Placed",
+      "shipping": 0,
+      "subtotal": 1716,
+      "total": 1716,
+      "date": "2023-11-13T06:18:13.537Z",
+      "products": [
+        {
+          "userid": "1",
+          "productid": "18",
+          "name": "Male Jeans Slim  Fit",
+          "brand": "Mufti",
+          "color": "Black",
+          "size": "36",
+          "price": 1716,
+          "qty": 1,
+          "total": 1716,
+          "pic": "p16.jpg",
+          "id": 4
+        }
+      ],
+      "id": 5
     }
   ],
   "newsletter": [

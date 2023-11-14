@@ -18,6 +18,7 @@ export default function Profile() {
 
   function deleteItem(id) {
     dispatch(deleteWishlist({ id: id }));
+    getApiData();
   }
 
   async function getApiData() {
@@ -59,14 +60,14 @@ export default function Profile() {
           <div className="col-md-6">
             {user.pic ? (
               <img
-                src={`/img/${user.pic}`}
+                src={`/kifayati/img/${user.pic}`}
                 height={"400px"}
                 width="100%"
                 alt=""
               />
             ) : (
               <img
-                src={`/products/nouser.png`}
+                src={`/kifayati/products/nouser.png`}
                 height={"400px"}
                 width="100%"
                 alt=""
@@ -142,19 +143,19 @@ export default function Profile() {
                   return (
                     <tr key={index}>
                       <td>
-                        <a
-                          href={`/products/${item.pic}`}
+                        <Link
+                          to={`/products/${item.pic}`}
                           target="_blank"
                           rel="noreferrer"
                         >
                           <img
-                            src={`/products/${item.pic}`}
+                            src={`/kifayati/products/${item.pic}`}
                             height="80px"
                             width="80px"
                             className="rounded-1"
                             alt=""
                           />
-                        </a>
+                        </Link>
                       </td>
                       <td>
                         <Link to={`/product/${item.id}`} className="text-dark">
@@ -258,19 +259,19 @@ export default function Profile() {
                           return (
                             <tr key={index}>
                               <td>
-                                <a
-                                  href={`/products/${item.pic}`}
+                                <Link
+                                  to={`/products/${item.pic}`}
                                   target="_blank"
                                   rel="noreferrer"
                                 >
                                   <img
-                                    src={`/products/${item.pic}`}
+                                    src={`/kifayati/products/${item.pic}`}
                                     height="80px"
                                     width="80px"
                                     className="rounded-1"
                                     alt=""
                                   />
-                                </a>
+                                </Link>
                               </td>
                               <td>
                                 {" "}

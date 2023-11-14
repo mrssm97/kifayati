@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -16,7 +17,7 @@ export default function About() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb justify-content-center text-uppercase">
                 <li className="breadcrumb-item">
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
 
                 <li
@@ -42,7 +43,11 @@ export default function About() {
             >
               <div className="d-flex py-5 px-2">
                 <i className="text-primary flex-shrink-0">
-                  <img src="img/fast-delivery.png" height="120px" alt="" />
+                  <img
+                    src="/kifayati/img/fast-delivery.png"
+                    height="120px"
+                    alt=""
+                  />
                 </i>
 
                 <div className="ps-4">
@@ -57,7 +62,11 @@ export default function About() {
             >
               <div className="d-flex bg-light py-5 px-4">
                 <i className="text-primary flex-shrink-0">
-                  <img src="img/refund-policy.png" height="75px" alt="" />
+                  <img
+                    src="/kifayati/img/refund-policy.png"
+                    height="75px"
+                    alt=""
+                  />
                 </i>
                 <div className="ps-4">
                   <h5 className="mb-3">100% Refund Policy</h5>
@@ -71,7 +80,7 @@ export default function About() {
             >
               <div className="d-flex py-5 px-4">
                 <i className=" text-primary flex-shrink-0">
-                  <img src="img/quality.png" height="75px" alt="" />
+                  <img src="/kifayati/img/quality.png" height="75px" alt="" />
                 </i>
                 <div className="ps-4">
                   <h5 className="mb-3">100% Original Product</h5>
@@ -95,7 +104,7 @@ export default function About() {
               >
                 <img
                   className="position-absolute img-fluid w-100 h-100"
-                  src="img/about.jpg"
+                  src="/kifayati/img/about.jpg"
                   style={{ objectFit: "cover" }}
                   alt=""
                 />

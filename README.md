@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## "homepage": "https://mrssm97.github.io/kifayati",
+
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
 
 ## Available Scripts
 

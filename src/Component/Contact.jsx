@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addContactUs } from "../store/ActionCreators/ContactUsActionCreator";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   const [data, setData] = useState({
@@ -48,7 +49,7 @@ export default function Contact() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb justify-content-center text-uppercase">
                 <li className="breadcrumb-item">
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
 
                 <li

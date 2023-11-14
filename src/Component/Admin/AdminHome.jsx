@@ -32,14 +32,14 @@ export default function AdminHome() {
               <div className="col-md-6">
                 {user.pic ? (
                   <img
-                    src={`/img/${user.pic}`}
+                    src={`/kifayati/img/${user.pic}`}
                     height={"400px"}
                     width="100%"
                     alt=""
                   />
                 ) : (
                   <img
-                    src={`/products/nouser.png`}
+                    src={`/kifayati/products/nouser.png`}
                     height={"400px"}
                     width="100%"
                     alt=""

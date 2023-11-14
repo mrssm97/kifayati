@@ -40,7 +40,7 @@ import ShowCheckout from "./Admin/Checkout/ShowCheckout";
 import NoAdminMessage from "./NoAdminMessage";
 
 export default function App(props) {
-  const basename = document.querySelector("base")?.getAttribute("href");
+  // const basename = document.querySelector("base")?.getAttribute("href");
   const [storage, setStorage] = useState({
     invalid: false,
     remember: "",
@@ -53,7 +53,7 @@ export default function App(props) {
   });
   return (
     <>
-      <BrowserRouter basename={basename}>
+      <BrowserRouter basename="/kifayati">
         <Navbar storage={storage} setProfile={setStorage} />
         <Routes>
           {/*Public Access*/}

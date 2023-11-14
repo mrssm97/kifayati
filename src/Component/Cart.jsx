@@ -93,19 +93,19 @@ export default function Cart() {
                     return (
                       <tr key={index}>
                         <td>
-                          <a
-                            href={`/products/${item.pic}`}
+                          <Link
+                            to={`/products/${item.pic}`}
                             target="_blank"
                             rel="noreferrer"
                           >
                             <img
-                              src={`/products/${item.pic}`}
+                              src={`/kifayati/products/${item.pic}`}
                               className="rounded-1"
                               height="80px"
                               width="80px"
                               alt=""
                             />
-                          </a>
+                          </Link>
                         </td>
                         <th>{item.name}</th>
                         <th>{item.brand}</th>

@@ -49,29 +49,30 @@ export default function SubCategory() {
                   </tr>
                 </thead>
                 <tbody>
-                  {SubCategoryStateData.slice(1)
-                    .reverse()
-                    .map((item, index) => {
-                      return (
-                        <tr key={index}>
-                          <td>{item.id}</td>
-                          <td>{item.name}</td>
-                          <td>
-                            <Link to={`/admin/subcategory/update/${item.id}`}>
-                              <i className="fa fa-edit text-success"></i>
-                            </Link>
-                          </td>
-                          <td>
-                            <button
-                              className="btn"
-                              onClick={() => deleteItem(item.id)}
-                            >
-                              <i className="fa fa-trash text-danger"></i>
-                            </button>
-                          </td>
-                        </tr>
-                      );
-                    })}
+                  {SubCategoryStateData.length &&
+                    SubCategoryStateData.slice(1)
+                      .reverse()
+                      .map((item, index) => {
+                        return (
+                          <tr key={index}>
+                            <td>{item.id}</td>
+                            <td>{item.name}</td>
+                            <td>
+                              <Link to={`/admin/subcategory/update/${item.id}`}>
+                                <i className="fa fa-edit text-success"></i>
+                              </Link>
+                            </td>
+                            <td>
+                              <button
+                                className="btn"
+                                onClick={() => deleteItem(item.id)}
+                              >
+                                <i className="fa fa-trash text-danger"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        );
+                      })}
                 </tbody>
               </table>
             </div>

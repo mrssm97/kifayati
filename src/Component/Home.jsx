@@ -33,42 +33,7 @@ export default function Home() {
             <div className="carousel-item active">
               <img
                 className="w-100"
-                src="img/carousel-bg-1.jpg"
-                height="500px"
-                alt="pic1"
-              />
-              <div className="carousel-caption d-flex align-items-center">
-                <div className="container">
-                  <div className="row align-items-center justify-content-center justify-content-lg-start">
-                    <div className="col-10 col-lg-7 text-center text-lg-start">
-                      <h6 className="text-white text-uppercase mb-3 animated slideInDown">
-                        Online Best Shopping Plateform
-                      </h6>
-                      <h1 className="display-3 text-white mb-4 pb-3 animated slideInDown">
-                        Latest Trending Products
-                      </h1>
-                      <button
-                        href=""
-                        className="btn btn-primary py-3 px-5 animated slideInDown"
-                      >
-                        Shop Now<i className="fa fa-arrow-right ms-3"></i>
-                      </button>
-                    </div>
-                    <div className="col-lg-5 d-none d-lg-flex animated zoomIn">
-                      <img
-                        className="img-fluid"
-                        src="img/carousel-1.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                className="w-100"
-                src="img/carousel-bg-2.jpg"
+                src="/kifayati/img/carousel-bg-1.jpg"
                 height="500px"
                 alt="pic1"
               />
@@ -89,7 +54,39 @@ export default function Home() {
                     <div className="col-lg-5 d-none d-lg-flex animated zoomIn">
                       <img
                         className="img-fluid"
-                        src="img/carousel-2.png"
+                        src="/kifayati/img/carousel-1.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                className="w-100"
+                src="/kifayati/img/carousel-bg-2.jpg"
+                height="500px"
+                alt="pic1"
+              />
+              <div className="carousel-caption d-flex align-items-center">
+                <div className="container">
+                  <div className="row align-items-center justify-content-center justify-content-lg-start">
+                    <div className="col-10 col-lg-7 text-center text-lg-start">
+                      <h6 className="text-white text-uppercase mb-3 animated slideInDown">
+                        Online Best Shopping Plateform
+                      </h6>
+                      <h1 className="display-3 text-white mb-4 pb-3 animated slideInDown">
+                        Latest Trending Products
+                      </h1>
+                      <button className="btn btn-primary py-3 px-5 animated slideInDown">
+                        Shop Now<i className="fa fa-arrow-right ms-3"></i>
+                      </button>
+                    </div>
+                    <div className="col-lg-5 d-none d-lg-flex animated zoomIn">
+                      <img
+                        className="img-fluid"
+                        src="/kifayati/img/carousel-2.png"
                         alt=""
                       />
                     </div>
@@ -136,7 +133,11 @@ export default function Home() {
             >
               <div className="d-flex py-5 px-2">
                 <i className="text-primary flex-shrink-0">
-                  <img src="img/fast-delivery.png" height="120px" alt="" />
+                  <img
+                    src="/kifayati/img/fast-delivery.png"
+                    height="120px"
+                    alt=""
+                  />
                 </i>
 
                 <div className="ps-4">
@@ -151,7 +152,11 @@ export default function Home() {
             >
               <div className="d-flex bg-light py-5 px-4">
                 <i className="text-primary flex-shrink-0">
-                  <img src="img/refund-policy.png" height="75px" alt="" />
+                  <img
+                    src="/kifayati/img/refund-policy.png"
+                    height="75px"
+                    alt=""
+                  />
                 </i>
                 <div className="ps-4">
                   <h5 className="mb-3">100% Refund Policy</h5>
@@ -165,7 +170,7 @@ export default function Home() {
             >
               <div className="d-flex py-5 px-4">
                 <i className=" text-primary flex-shrink-0">
-                  <img src="img/quality.png" height="75px" alt="" />
+                  <img src="/kifayati/img/quality.png" height="75px" alt="" />
                 </i>
                 <div className="ps-4">
                   <h5 className="mb-3">100% Original Product</h5>
@@ -236,13 +241,13 @@ export default function Home() {
                     <div className="position-relative overflow-hidden">
                       <img
                         className="img-fluid"
-                        src={`/products/${item.pic1}`}
+                        src={`/kifayati/products/${item.pic1}`}
                         style={{ height: "230px", width: "100%" }}
                         alt=""
                       />
                       <div className="team-overlay position-absolute start-0 top-0 w-100 h-100">
                         <img
-                          src={`/products/${item.pic2}`}
+                          src={`/kifayati/products/${item.pic2}`}
                           className="position-absolute start-0 top-0 w-100 h-100 z-1"
                           style={{ height: "230px", width: "100%" }}
                           alt=""

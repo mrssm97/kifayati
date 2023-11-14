@@ -79,73 +79,73 @@ export default function Product() {
                         <td>
                           <del className="text-danger">
                             &#8377;{item.baseprice}
-                          </del>{" "}
+                          </del>
                           &#8377;{item.finalprice}{" "}
                           <sup>{item.discount}%Off</sup>
                         </td>
                         <td>{item.stock}</td>
                         <td>
-                          <a
-                            href={`/products/${item.pic1}`}
+                          <Link
+                            to={`/products/${item.pic1}`}
                             target="_blank"
                             rel="noreferrer"
                           >
                             <img
-                              src={`/products/${item.pic1}`}
+                              src={`/kifayati/products/${item.pic1}`}
                               height="80px"
                               width="80px"
                               className="rounded"
                               alt=""
                             />
-                          </a>
+                          </Link>
                         </td>
                         <td>
-                          <a
-                            href={`/products/${item.pic2}`}
+                          <Link
+                            to={`/products/${item.pic2}`}
                             target="_blank"
                             rel="noreferrer"
                           >
                             <img
-                              src={`/products/${item.pic2}`}
+                              src={`/kifayati/products/${item.pic2}`}
                               height="80px"
                               width="80px"
                               className="rounded"
                               alt=""
                             />
-                          </a>
+                          </Link>
                         </td>
                         <td>
-                          <a
-                            href={`/products/${item.pic3}`}
+                          <Link
+                            to={`/products/${item.pic3}`}
                             target="_blank"
                             rel="noreferrer"
                           >
                             <img
-                              src={`/products/${item.pic3}`}
+                              src={`/kifayati/products/${item.pic3}`}
                               height="80px"
                               width="80px"
                               className="rounded"
                               alt=""
                             />
-                          </a>
+                          </Link>
                         </td>
                         <td>
-                          <a
-                            href={`/products/${item.pic4}`}
+                          <Link
+                            to={`/products/${item.pic4}`}
                             target="_blank"
                             rel="noreferrer"
                           >
                             <img
-                              src={`/products/${item.pic4}`}
+                              src={`/kifayati/products/${item.pic4}`}
                               height="80px"
                               width="80px"
                               className="rounded"
                               alt=""
                             />
-                          </a>
+                          </Link>
                         </td>
                         <td>
-                          <Link to={`/admin/product/update/${item.id}`}>
+                          <Link to={`admin/product/update/${item.id}`}>
                             <i className="fa fa-edit text-success"></i>
                           </Link>
                         </td>

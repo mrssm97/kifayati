@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "../Sidebar";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
   getCheckout,
@@ -202,19 +202,19 @@ export default function ShowCheckout() {
                         return (
                           <tr key={index}>
                             <td>
-                              <a
-                                href={`/products/${item.pic}`}
+                              <Link
+                                to={`/products/${item.pic}`}
                                 target="_blank"
                                 rel="noreferrer"
                               >
                                 <img
-                                  src={`/products/${item.pic}`}
+                                  src={`/kifayati/products/${item.pic}`}
                                   height="80px"
                                   width="80px"
                                   className="rounded-1"
                                   alt=""
                                 />
-                              </a>
+                              </Link>
                             </td>
                             <td>{item.name} </td>
                             <td>{item.brand} </td>
