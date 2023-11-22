@@ -39,7 +39,7 @@ import AdminCheckout from "./Admin/Checkout/AdminCheckout";
 import ShowCheckout from "./Admin/Checkout/ShowCheckout";
 import NoAdminMessage from "./NoAdminMessage";
 
-export default function App(props) {
+export default function App() {
   // const basename = document.querySelector("base")?.getAttribute("href");
   const [storage, setStorage] = useState({
     invalid: false,
