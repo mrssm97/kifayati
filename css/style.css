@@ -177,6 +177,9 @@
     height: 100%;
     object-fit: cover;
   }
+  .responsive {
+    width: 95% !important;
+  }
 }
 
 .page-header {
