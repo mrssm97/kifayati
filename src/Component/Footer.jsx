@@ -63,20 +63,32 @@ export default function Footer() {
                 </Link>
               </p>
               <div className="d-flex pt-2">
-                <Link className="btn btn-outline-light btn-social" to="">
-                  <i className="fab fa-twitter">https://x.com/elonmusk</i>
+                <Link
+                  className="btn btn-outline-light btn-social"
+                  to="https://x.com/elonmusk"
+                  target="__blank"
+                >
+                  <i className="fab fa-twitter"></i>
                 </Link>
-                <Link className="btn btn-outline-light btn-social" to="">
-                  <i className="fab fa-facebook-f">
-                    https://www.facebook.com/Sanjayk101
-                  </i>
+                <Link
+                  className="btn btn-outline-light btn-social"
+                  to="https://www.facebook.com/Sanjayk101"
+                  target="__blank"
+                >
+                  <i className="fab fa-facebook-f"></i>
                 </Link>
-                <Link className="btn btn-outline-light btn-social" to="">
-                  <i className="fab fa-youtube">
-                    https://youtube.com/@_the_maurya
-                  </i>
+                <Link
+                  className="btn btn-outline-light btn-social"
+                  to="https://youtube.com/@WorldAffairsUnacademy"
+                  target="__blank"
+                >
+                  <i className="fab fa-youtube"></i>
                 </Link>
-                <Link className="btn btn-outline-light btn-social" to="">
+                <Link
+                  className="btn btn-outline-light btn-social"
+                  to="https://www.linkedin.com/in/ssm1997/"
+                  target="__blank"
+                >
                   <i className="fab fa-linkedin-in"></i>
                 </Link>
               </div>

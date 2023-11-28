@@ -123,10 +123,10 @@ export default function Signup() {
       <Box
         component={"form"}
         sx={{
-          mt: "40px",
+          mt: "3%",
           display: "flex",
           justifyContent: "center",
-          width: "100vw",
+          width: "100%",
           // height: "500px",
           // bgcolor: "pink",
         }}
@@ -136,11 +136,12 @@ export default function Signup() {
         <Box
           sx={{
             // height: "550px",
-            width: "400px",
+            width: "50%",
             display: "flex",
             flexDirection: "column",
             // bgcolor: "white",
           }}
+          className="responsive"
         >
           <Box
             width={"100%"}
@@ -197,26 +198,32 @@ export default function Signup() {
               name="phone"
               onChange={getInputData}
             />
-            <TextField
-              id="outlined-basic"
-              label="Password"
-              type="password"
-              variant="outlined"
-              sx={marTop}
-              required
-              name="password"
-              onChange={getInputData}
-            />
-            <TextField
-              id="outlined-basic"
-              label="Verify Password"
-              type="password"
-              variant="outlined"
-              sx={marTop}
-              required
-              name="cpassword"
-              onChange={getInputData}
-            />
+            <Box
+              width={"100%"}
+              display={"flex"}
+              justifyContent={"space-between"}
+            >
+              <TextField
+                id="outlined-basic"
+                label="Password"
+                type="password"
+                variant="outlined"
+                sx={{ ...marTop, width: "48%" }}
+                required
+                name="password"
+                onChange={getInputData}
+              />
+              <TextField
+                id="outlined-basic"
+                label="Verify Password"
+                type="password"
+                variant="outlined"
+                sx={{ ...marTop, width: "48%" }}
+                required
+                name="cpassword"
+                onChange={getInputData}
+              />
+            </Box>
             <FormControlLabel
               sx={marTop}
               control={<Checkbox />}

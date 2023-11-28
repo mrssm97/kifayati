@@ -59,21 +59,21 @@ export default function Login() {
       localStorage.setItem("name", item.name);
       localStorage.setItem("username", item.username);
       localStorage.setItem("role", item.role);
-      if (item.role === "Buyer") navigate("/");
-      else navigate("/");
+      if (item.role === "Buyer") navigate("/profile");
+      else navigate("/admin");
     } else setShow(true);
   }
   return (
     <>
-      {" "}
       <Box
         component="form"
         onSubmit={(e) => postData(e)}
         sx={{
-          mt: "40px",
+          mt: "3%",
+          // padding: "0 5px",
           display: "flex",
           justifyContent: "center",
-          width: "100vw",
+          width: "100%",
           // height: "500px",
           // bgcolor: "pink",
         }}
@@ -81,11 +81,12 @@ export default function Login() {
         <Box
           sx={{
             // height: "550px",
-            width: "400px",
+            width: "50%",
             display: "flex",
             flexDirection: "column",
             // bgcolor: "white",
           }}
+          className={"responsive"}
         >
           <Box
             width={"100%"}
@@ -102,19 +103,17 @@ export default function Login() {
             </Typography>
           </Box>
           <Box>
-            {show
-              ? [
-                  <div
-                    style={{
-                      textAlign: "center",
-                      color: "red",
-                      marginTop: "20px",
-                    }}
-                  >
-                    <i>* Enter correct username and password !!!</i>
-                  </div>,
-                ]
-              : null}
+            {show ? (
+              <div
+                style={{
+                  textAlign: "center",
+                  color: "red",
+                  marginTop: "20px",
+                }}
+              >
+                <i>* Enter correct username and password !!!</i>
+              </div>
+            ) : null}
           </Box>
           <Box display={"flex"} flexDirection={"column"} mt={"8px"}>
             <TextField
@@ -160,7 +159,7 @@ export default function Login() {
                 Forgot Password?
               </Link>
               <Link to={"/signup"} style={linkStyle}>
-                Don't have an account? Sign Up
+                Don&#39;t have an account? Sign Up
               </Link>
             </Box>
           </Box>

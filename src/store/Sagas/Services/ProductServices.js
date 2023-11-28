@@ -9,6 +9,11 @@ export async function addRecord(payload) {
   return await response.json();
 }
 export async function getRecord() {
+  // let products;
+  // fetch("/api/maincategory")
+  //   .then((response) => response.json())
+  //   .then((product) => (products = product));
+  // return products;
   let response = await fetch("/product", {
     method: "get",
     headers: {
@@ -31,7 +36,7 @@ export async function deleteRecord(payload) {
   let response = await fetch("/product/" + payload.id, {
     method: "delete",
     headers: {
-      "content-type": "application//json",
+      "content-type": "application/json",
     },
   });
   console.log(URL + "/" + payload.id);

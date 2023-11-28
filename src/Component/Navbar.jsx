@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 export default function Navbar() {
   let navigate = useNavigate();
   function logOut() {
@@ -36,42 +36,42 @@ export default function Navbar() {
             <div className="h-100 d-inline-flex align-items-center py-3 me-4">
               <small className="fa fa-phone-alt text-primary me-2"></small>
               <small>
-                <Link to="tel:7542006442">+91-7542006442</Link>
+                <NavLink to="tel:7542006442">+91-7542006442</NavLink>
               </small>
             </div>
             <div className="h-100 d-inline-flex align-items-center py-3 me-4">
               <small className="fa fa-envelope text-primary me-2"></small>
               <small>
-                <Link to="mailto:ssm.mrsanjay97@gmail.com">
+                <NavLink to="mailto:ssm.mrsanjay97@gmail.com">
                   ssm.mrsanjay97@gmail.com
-                </Link>
+                </NavLink>
               </small>
             </div>
             <div className="h-100 d-inline-flex align-items-center">
-              <Link
+              <NavLink
                 className="btn btn-sm-square bg-white text-primary me-1"
                 to=""
               >
                 <i className="fab fa-facebook-f"></i>
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 className="btn btn-sm-square bg-white text-primary me-1"
                 to=""
               >
                 <i className="fab fa-twitter"></i>
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 className="btn btn-sm-square bg-white text-primary me-1"
                 to=""
               >
                 <i className="fab fa-linkedin-in"></i>
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 className="btn btn-sm-square bg-white text-primary me-0"
                 to=""
               >
                 <i className="fab fa-instagram"></i>
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -80,14 +80,14 @@ export default function Navbar() {
 
       {/* <!-- Navbar Start --> */}
       <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <Link
+        <NavLink
           to="/"
           className="navbar-brand d-flex align-items-center px-1 px-lg-5"
         >
           <h2 className="m-0 text-primary">
             <i className="fa fa-shopping-cart me-3"></i>Kifayti.com
           </h2>
-        </Link>
+        </NavLink>
         <button
           type="button"
           className="navbar-toggler me-1"
@@ -98,52 +98,52 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-lg-0">
-            <Link to="/" className="nav-item nav-link active">
+            <NavLink to="/" className="nav-item nav-link">
               Home
-            </Link>
-            <Link to="about" className="nav-item nav-link">
+            </NavLink>
+            <NavLink to="about" className="nav-item nav-link">
               About
-            </Link>
-            <Link to="contact" className="nav-item nav-link">
+            </NavLink>
+            <NavLink to="contact" className="nav-item nav-link">
               Contact
-            </Link>
+            </NavLink>
 
-            <Link to="shop" className="nav-item nav-link">
+            <NavLink to="shop" className="nav-item nav-link">
               Shop
-            </Link>
+            </NavLink>
           </div>
           {localStorage.getItem("login") === "true" ? (
-            <div className="btn btn-primary py-4 px-lg-4">
+            <div className="btn btn-primary px-lg-4">
               <div className="nav-item dropdown">
-                <Link
+                <NavLink
                   to="#"
                   className="nav-link dropdown-toggle text-light"
                   data-bs-toggle="dropdown"
                 >
                   {localStorage.getItem("name")}
-                </Link>
+                </NavLink>
                 <div
                   className="dropdown-menu fade-up m-0"
                   style={{ width: "5px", left: "-25px" }}
                 >
                   {localStorage.getItem("role") === "Admin" ? (
-                    <Link to="/admin" className="dropdown-item">
+                    <NavLink to="/admin" className="dropdown-item">
                       Profile
-                    </Link>
+                    </NavLink>
                   ) : (
-                    <Link to="/profile" className="dropdown-item">
+                    <NavLink to="/profile" className="dropdown-item">
                       Profile
-                    </Link>
+                    </NavLink>
                   )}
                   {localStorage.getItem("role") === "Buyer" ? (
                     <>
                       {" "}
-                      <Link to="cart" className="dropdown-item">
+                      <NavLink to="cart" className="dropdown-item">
                         Cart
-                      </Link>
-                      <Link to="checkout" className="dropdown-item">
+                      </NavLink>
+                      <NavLink to="checkout" className="dropdown-item">
                         Checkout
-                      </Link>
+                      </NavLink>
                     </>
                   ) : (
                     ""
@@ -155,9 +155,17 @@ export default function Navbar() {
               </div>
             </div>
           ) : (
-            <Link to={"/login"} className="btn btn-primary py-4 px-lg-5">
-              Login
-            </Link>
+            <div className="btn btn-primary px-lg-4">
+              <div className="nav-item dropdown">
+                {" "}
+                <NavLink
+                  to={"/login"}
+                  className="nav-link dropdown-toggle text-light"
+                >
+                  Login
+                </NavLink>
+              </div>
+            </div>
           )}
         </div>
       </nav>

@@ -54,6 +54,7 @@ export default function CreateProduct() {
     });
   }
   async function postData(e) {
+    e.preventDefault();
     let fp = Math.round(
       data.baseprice - (data.baseprice * data.discount) / 100
     );

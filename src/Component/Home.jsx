@@ -47,9 +47,12 @@ export default function Home() {
                       <h1 className="display-3 text-white mb-4 pb-3 animated slideInDown">
                         Latest Trending Products
                       </h1>
-                      <button className="btn btn-primary py-3 px-5 animated slideInDown">
+                      <Link
+                        to="/shop"
+                        className="btn btn-primary py-3 px-5 animated slideInDown"
+                      >
                         Shop Now<i className="fa fa-arrow-right ms-3"></i>
-                      </button>
+                      </Link>
                     </div>
                     <div className="col-lg-5 d-none d-lg-flex animated zoomIn">
                       <img
