@@ -39,7 +39,7 @@ export default function Contact() {
       {/* <!-- Page Header Start --> */}
       <div
         className="container-fluid page-header mb-5 p-0"
-        style={{ backgroundImage: "url(kifayati/img/carousel-bg-1.jpg)" }}
+        style={{ backgroundImage: "url(/img/carousel-bg-1.jpg)" }}
       >
         <div className="container-fluid page-header-inner py-5">
           <div className="container text-center">
