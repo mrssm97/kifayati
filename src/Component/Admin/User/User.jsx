@@ -5,7 +5,7 @@ export default function User() {
   const [data, setData] = useState([]);
   async function deleteItem(id) {
     if (window.confirm(`Are you sure! Cofirm to delete that item! : `)) {
-      await fetch("/user/" + id, {
+      await fetch("https://kifayatidb.onrender.com/user/" + id, {
         method: "delete",
         headers: {
           "content-type": "application/json",
@@ -15,7 +15,7 @@ export default function User() {
     }
   }
   async function getApiData() {
-    var response = await fetch("/user", {
+    var response = await fetch("https://kifayatidb.onrender.com/user", {
       method: "get",
       headers: {
         "content-type": "application/json",

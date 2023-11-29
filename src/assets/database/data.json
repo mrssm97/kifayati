@@ -1,751 +1,749 @@
 {
-  "api": {
-    "maincategory": [
-      {
-        "id": 0
-      },
-      {
-        "name": "Male",
-        "id": 3
-      },
-      {
-        "id": 4,
-        "name": "Kids"
-      },
-      {
-        "name": "Female",
-        "id": 5
-      }
-    ],
-    "subcategory": [
-      {
-        "id": 0
-      },
-      {
-        "name": "Trouser",
-        "id": 1
-      },
-      {
-        "id": 2,
-        "name": "Shirt"
-      },
-      {
-        "name": "Jeans",
-        "id": 3
-      },
-      {
-        "name": "Frock",
-        "id": 4
-      },
-      {
-        "name": "Shorts",
-        "id": 5
-      },
-      {
-        "name": "Caps",
-        "id": 6
-      },
-      {
-        "name": "Underwear",
-        "id": 7
-      },
-      {
-        "name": "Sweater",
-        "id": 8
-      },
-      {
-        "id": 9,
-        "name": "Tshirt"
-      }
-    ],
-    "brand": [
-      {
-        "id": 0
-      },
-      {
-        "name": "Mufti",
-        "id": 1
-      },
-      {
-        "name": "Gucci",
-        "id": 2
-      },
-      {
-        "name": "Levis",
-        "id": 3
-      },
-      {
-        "name": "Jocky",
-        "id": 4
-      },
-      {
-        "name": "Nike",
-        "id": 5
-      },
-      {
-        "name": "Sparky",
-        "id": 6
-      }
-    ],
-    "product": [
-      {
-        "id": 0
-      },
-      {
-        "id": 2,
-        "name": "Male Jeans Regular Fit",
-        "maincategory": "Male",
-        "subcategory": "Jeans",
-        "brand": "Mufti",
-        "color": "Black",
-        "size": "36",
-        "baseprice": 4500,
-        "discount": 50,
-        "finalprice": 2250,
-        "stock": "In Stock",
-        "description": "This is a Sample Product",
-        "pic1": "p7.jpg",
-        "pic2": "p5.jpg",
-        "pic3": "p1.jpg",
-        "pic4": "p2.jpg"
-      },
-      {
-        "id": 3,
-        "name": "Male Jeans Black",
-        "maincategory": "Male",
-        "subcategory": "Jeans",
-        "brand": "Tommy Hilfiger",
-        "color": "Blue",
-        "size": "36",
-        "baseprice": "6500",
-        "discount": "65",
-        "finalprice": 2275,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p5.jpg",
-        "pic2": "p2.jpg",
-        "pic3": "p1.jpg",
-        "pic4": "p7.jpg"
-      },
-      {
-        "name": "Male Jeans Blue",
-        "maincategory": "Male",
-        "subcategory": "Jeans",
-        "brand": "Adidas",
-        "color": "Blue",
-        "size": "34",
-        "baseprice": "48700",
-        "discount": "87",
-        "finalprice": 6331,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p1.jpg",
-        "pic2": "p2.jpg",
-        "pic3": "p5.jpg",
-        "pic4": "p10.jpg",
-        "id": 4
-      },
-      {
-        "name": "Male Tshirt Polo",
-        "maincategory": "Male",
-        "subcategory": "Tshirt",
-        "brand": "Polo",
-        "color": "White",
-        "size": "MD",
-        "baseprice": "4500",
-        "discount": "80",
-        "finalprice": 900,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p2.jpg",
-        "pic2": "p15.jpg",
-        "pic3": "p24.jpg",
-        "pic4": "p29.jpg",
-        "id": 5
-      },
-      {
-        "name": "Male Shirt Nike",
-        "maincategory": "Male",
-        "subcategory": "Shirt",
-        "brand": "Nike",
-        "color": "Green Check",
-        "size": "XL",
-        "baseprice": "4500",
-        "discount": "90",
-        "finalprice": 450,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p25.jpg",
-        "pic2": "p26.jpg",
-        "pic3": "p40.jpg",
-        "pic4": "p38.jpg",
-        "id": 6
-      },
-      {
-        "name": "Male Tshirt Black Adidas",
-        "maincategory": "Male",
-        "subcategory": "Tshirt",
-        "brand": "Adidas",
-        "color": "Black",
-        "size": "XXL",
-        "baseprice": "15000",
-        "discount": "80",
-        "finalprice": 3000,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p3.jpg",
-        "pic2": "p51.jpg",
-        "pic3": "p52.jpg",
-        "pic4": "p49.jpg",
-        "id": 7
-      },
-      {
-        "name": "Male Trouser Polo",
-        "maincategory": "Male",
-        "subcategory": "Trouser",
-        "brand": "Polo",
-        "color": "Black",
-        "size": "34",
-        "baseprice": "8500",
-        "discount": "85",
-        "finalprice": 1275,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p10.jpg",
-        "pic2": "p11.jpg",
-        "pic3": "p41.jpg",
-        "pic4": "p44.jpg",
-        "id": 8
-      },
-      {
-        "name": "Female Jeans Slim Fit",
-        "maincategory": "Female",
-        "subcategory": "Jeans",
-        "brand": "Mufti",
-        "color": "Blue",
-        "size": "32",
-        "baseprice": "4500",
-        "discount": "45",
-        "finalprice": 2475,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p12.jpg",
-        "pic2": "p17.jpg",
-        "pic3": "p19.jpg",
-        "pic4": "p47.jpg",
-        "id": 9
-      },
-      {
-        "id": 10,
-        "name": "Female Jeans Mufti",
-        "maincategory": "Female",
-        "subcategory": "Jeans",
-        "brand": "Mufti",
-        "color": "Blue",
-        "size": "28",
-        "baseprice": "8580",
-        "discount": "80",
-        "finalprice": 1716,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p32.jpg",
-        "pic2": "p12.jpg",
-        "pic3": "p53.jpg",
-        "pic4": "p73.jpg"
-      },
-      {
-        "name": "Female Tshirt Adidas",
-        "maincategory": "Female",
-        "subcategory": "Tshirt",
-        "brand": "Adidas",
-        "color": "White",
-        "size": "MD",
-        "baseprice": "4500",
-        "discount": "45",
-        "finalprice": 2475,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p22.jpg",
-        "pic2": "p28.jpg",
-        "pic3": "p39.jpg",
-        "pic4": "p23.jpg",
-        "id": 11
-      },
-      {
-        "name": "Female Tshirt White Mufti",
-        "maincategory": "Female",
-        "subcategory": "Tshirt",
-        "brand": "Mufti",
-        "color": "White",
-        "size": "M",
-        "baseprice": "2500",
-        "discount": "85",
-        "finalprice": 375,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p23.jpg",
-        "pic2": "p28.jpg",
-        "pic3": "p19.jpg",
-        "pic4": "p6.jpg",
-        "id": 12
-      },
-      {
-        "name": "Female Shirt Gucci",
-        "maincategory": "Female",
-        "subcategory": "Shirt",
-        "brand": "Gucci",
-        "color": "White",
-        "size": "M",
-        "baseprice": "8585",
-        "discount": "25",
-        "finalprice": 6439,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p72.jpg",
-        "pic2": "p71.jpg",
-        "pic3": "p70.jpg",
-        "pic4": "p9.jpg",
-        "id": 13
-      },
-      {
-        "name": "Kids Jeans Tommy Hilfiger",
-        "maincategory": "Kids",
-        "subcategory": "Jeans",
-        "brand": "Tommy Hilfiger",
-        "color": "Black",
-        "size": "26",
-        "baseprice": "5000",
-        "discount": "50",
-        "finalprice": 2500,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p43.jpg",
-        "pic2": "p43.jpg",
-        "pic3": "p42.jpg",
-        "pic4": "p66.jpg",
-        "id": 14
-      },
-      {
-        "name": "Male Jeans",
-        "maincategory": "Male",
-        "subcategory": "Jeans",
-        "brand": "Adidas",
-        "color": "Black",
-        "size": "34",
-        "baseprice": "4500",
-        "discount": "45",
-        "finalprice": 2475,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p16.jpg",
-        "pic2": "p7.jpg",
-        "pic3": "p44.jpg",
-        "pic4": "p5.jpg",
-        "id": 15
-      },
-      {
-        "name": "Male Jeans Regular Fit",
-        "maincategory": "Male",
-        "subcategory": "Jeans",
-        "brand": "Adidas",
-        "color": "Blue",
-        "size": "34",
-        "baseprice": "8585",
-        "discount": "85",
-        "finalprice": 1288,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p44.jpg",
-        "pic2": "p7.jpg",
-        "pic3": "p2.jpg",
-        "pic4": "p11.jpg",
-        "id": 16
-      },
-      {
-        "name": "Male Jeans Ripped",
-        "maincategory": "Male",
-        "subcategory": "Jeans",
-        "brand": "Adidas",
-        "color": "Black",
-        "size": "32",
-        "baseprice": "9850",
-        "discount": "50",
-        "finalprice": 4925,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p41.jpg",
-        "pic2": "p10.jpg",
-        "pic3": "p2.jpg",
-        "pic4": "p1.jpg",
-        "id": 17
-      },
-      {
-        "id": 18,
-        "name": "Male Jeans Slim  Fit",
-        "maincategory": "Male",
-        "subcategory": "Jeans",
-        "brand": "Mufti",
-        "color": "Black",
-        "size": "36",
-        "baseprice": "7800",
-        "discount": "78",
-        "finalprice": 1716,
-        "stock": "In Stock",
-        "description": "This is Sample Product",
-        "pic1": "p16.jpg",
-        "pic2": "p1.jpg",
-        "pic3": "p2.jpg",
-        "pic4": "p7.jpg"
-      },
-      {
-        "id": 21,
-        "name": "Mufti Slim Fit Jeans Trending",
-        "maincategory": "Male",
-        "subcategory": "Jeans",
-        "brand": "Mufti",
-        "color": "Blue",
-        "size": "XL",
-        "baseprice": 25000,
-        "finalprice": 12500,
-        "discount": 50,
-        "stock": "In stock",
-        "description": "Trending Mufti Extra Large Blue Jeans.",
-        "pic1": "p23.jpg",
-        "pic2": "p13.jpg",
-        "pic3": "p22.jpg",
-        "pic4": "p25.jpg"
-      }
-    ],
-    "user": [
-      {
-        "id": 0
-      },
-      {
-        "name": "Sanjay kumar",
-        "email": "ssm.mrsanjay97@gmail.com",
-        "phone": "7542006442",
-        "address": "D-7, Sector 56\n",
-        "pin": "201307",
-        "city": "Noida",
-        "state": "Uttar Pradesh",
-        "pic": "admin-pic.jpg",
-        "username": "sanjay@97",
-        "id": 1,
-        "password": "okay",
-        "role": "Admin"
-      },
-      {
-        "name": "Ajay Kumar Maurya",
-        "email": "chandan.muk88@gmail.com",
-        "phone": "7503678984",
-        "address": "B-35, Sector 55, Noida,India",
-        "pin": "201301",
-        "city": "Noida",
-        "state": "UP",
-        "pic": "testimonial-2.jpg",
-        "username": "ajay",
-        "password": "ajay",
-        "role": "Buyer",
-        "id": 2
-      },
-      {
-        "name": "a",
-        "username": "a",
-        "email": "ssm.mrsanjay97@gmail.com",
-        "phone": "09971641385",
-        "password": "a",
-        "role": "Buyer",
-        "id": 3
-      }
-    ],
-    "cart": [
-      {
-        "id": 0
-      },
-      {
-        "userid": null,
-        "productid": "14",
-        "name": "Kids Jeans Tommy Hilfiger",
-        "brand": "Tommy Hilfiger",
-        "color": "Black",
-        "size": "26",
-        "price": 2500,
-        "qty": 1,
-        "total": 2500,
-        "pic": "p43.jpg",
-        "id": 1
-      }
-    ],
-    "wishlist": [
-      {
-        "id": 0
-      },
-      {
-        "userid": "2",
-        "productid": "18",
-        "name": "Male Jeans Slim  Fit",
-        "brand": "Mufti",
-        "color": "Black",
-        "size": "36",
-        "price": 1716,
-        "pic": "p16.jpg",
-        "id": 1
-      },
-      {
-        "userid": "2",
-        "productid": "12",
-        "name": "Female Tshirt White Mufti",
-        "brand": "Mufti",
-        "color": "White",
-        "size": "M",
-        "price": 375,
-        "pic": "p23.jpg",
-        "id": 2
-      }
-    ],
-    "checkout": [
-      {
-        "id": 0
-      },
-      {
-        "userid": "2",
-        "paymentmode": "COD",
-        "paymentstatus": "Done",
-        "orderstatus": "Delivered",
-        "shipping": 0,
-        "subtotal": 34756,
-        "total": 34756,
-        "date": "2023-11-07T05:24:08.902Z",
-        "products": [
-          {
-            "userid": "2",
-            "productid": "2",
-            "name": "Male Jeans Regular Fit",
-            "brand": "Mufti",
-            "color": "Black",
-            "size": "36",
-            "price": 2250,
-            "qty": 4,
-            "total": 9000,
-            "pic": "p7.jpg",
-            "id": 1
-          },
-          {
-            "userid": "2",
-            "productid": "13",
-            "name": "Female Shirt Gucci",
-            "brand": "Gucci",
-            "color": "White",
-            "size": "M",
-            "price": 6439,
-            "qty": 4,
-            "total": 25756,
-            "pic": "p72.jpg",
-            "id": 2
-          }
-        ],
-        "id": 1
-      },
-      {
-        "userid": "2",
-        "paymentmode": "NetBanking/Card/UPI",
-        "paymentstatus": "Pending",
-        "orderstatus": "Order is Placed",
-        "shipping": 0,
-        "subtotal": 5148,
-        "total": 5148,
-        "date": "2023-11-09T12:37:05.057Z",
-        "products": [
-          {
-            "userid": "2",
-            "productid": "18",
-            "name": "Male Jeans Slim  Fit",
-            "brand": "Mufti",
-            "color": "Black",
-            "size": "36",
-            "price": 1716,
-            "qty": 3,
-            "total": 5148,
-            "pic": "p16.jpg",
-            "id": 1
-          }
-        ],
-        "id": 2
-      },
-      {
-        "userid": "2",
-        "paymentmode": "COD",
-        "paymentstatus": "Pending",
-        "orderstatus": "Order is Placed",
-        "shipping": 0,
-        "subtotal": 1716,
-        "total": 1716,
-        "date": "2023-11-10T06:37:08.154Z",
-        "products": [
-          {
-            "userid": "2",
-            "productid": "18",
-            "name": "Male Jeans Slim  Fit",
-            "brand": "Mufti",
-            "color": "Black",
-            "size": "36",
-            "price": 1716,
-            "qty": 1,
-            "total": 1716,
-            "pic": "p16.jpg",
-            "id": 2
-          }
-        ],
-        "id": 3
-      },
-      {
-        "userid": "1",
-        "paymentmode": "COD",
-        "paymentstatus": "Pending",
-        "orderstatus": "Order is Placed",
-        "shipping": 0,
-        "subtotal": 1716,
-        "total": 1716,
-        "date": "2023-11-13T06:14:15.583Z",
-        "products": [
-          {
-            "userid": "1",
-            "productid": "18",
-            "name": "Male Jeans Slim  Fit",
-            "brand": "Mufti",
-            "color": "Black",
-            "size": "36",
-            "price": 1716,
-            "qty": 1,
-            "total": 1716,
-            "pic": "p16.jpg",
-            "id": 4
-          }
-        ],
-        "id": 4
-      },
-      {
-        "userid": "1",
-        "paymentmode": "NetBanking/Card/UPI",
-        "paymentstatus": "Pending",
-        "orderstatus": "Order is Placed",
-        "shipping": 0,
-        "subtotal": 1716,
-        "total": 1716,
-        "date": "2023-11-13T06:18:13.537Z",
-        "products": [
-          {
-            "userid": "1",
-            "productid": "18",
-            "name": "Male Jeans Slim  Fit",
-            "brand": "Mufti",
-            "color": "Black",
-            "size": "36",
-            "price": 1716,
-            "qty": 1,
-            "total": 1716,
-            "pic": "p16.jpg",
-            "id": 4
-          }
-        ],
-        "id": 5
-      },
-      {
-        "userid": "2",
-        "paymentmode": "COD",
-        "paymentstatus": "Pending",
-        "orderstatus": "Order is Placed",
-        "shipping": 0,
-        "subtotal": 2616,
-        "total": 2616,
-        "date": "2023-11-27T07:09:12.510Z",
-        "products": [
-          {
-            "userid": "2",
-            "productid": "6",
-            "name": "Male Shirt Nike",
-            "brand": "Nike",
-            "color": "Green Check",
-            "size": "XL",
-            "price": 450,
-            "qty": 2,
-            "total": 900,
-            "pic": "p25.jpg",
-            "id": 2
-          },
-          {
-            "userid": "2",
-            "productid": "18",
-            "name": "Male Jeans Slim  Fit",
-            "brand": "Mufti",
-            "color": "Black",
-            "size": "36",
-            "price": 1716,
-            "qty": 1,
-            "total": 1716,
-            "pic": "p16.jpg",
-            "id": 3
-          }
-        ],
-        "id": 6
-      }
-    ],
-    "newsletter": [
-      {
-        "id": 0
-      },
-      {
-        "email": "chandan.muk88@gmail.com",
-        "id": 1
-      }
-    ],
-    "contactus": [
-      {
-        "id": 0
-      },
-      {
-        "name": "Chandan Kumar",
-        "email": "chandan.muk88@gmail.com",
-        "phone": "09971641385",
-        "subject": "Mouse",
-        "message": "My Mouse is not working well. It's not taking that much faster as it used to be.",
-        "date": "2023-11-07T08:48:06.954Z",
-        "status": "Active",
-        "id": 1
-      }
-    ],
-    "testimonial": [
-      {
-        "id": 0
-      },
-      {
-        "name": "Nitin Chauhan",
-        "profile": "Full Stack Trainer",
-        "pic": "testimonial-3.jpg",
-        "message": "The Noise Halo Plus Elite Smartwatch is a true marvel of technology that has left me impressed beyond measure. As an avid tech enthusiast and fitness aficionado, I've had the pleasure of testing numerous smartwatches, but none have come close to the experience offered by the Halo Plus Elite.",
-        "id": 1
-      },
-      {
-        "name": "Sumit Kumar",
-        "profile": "Bank Manager",
-        "pic": "team-4.jpg",
-        "message": "The watch hangs up frequently. Sometimes when charge goes below 50%, sometimes above 60%. Again you have to restart or reboot the watch. That is the only problem. I am using it when I go for walk. Not calling on blue tooth etc.",
-        "id": 2
-      },
-      {
-        "name": "Mohan Mishra",
-        "profile": "Bankars",
-        "pic": "testimonial-2.jpg",
-        "message": "Very good quality and main thing about touch screen working very smoothly. But one point tha noise company should give some notice on straps . But all over this watch at this price very good and looks cool",
-        "id": 3
-      },
-      {
-        "name": "Kanak Thakurs",
-        "profile": "Teacherss",
-        "pic": "testimonial-1.jpg",
-        "message": "Kanika Thakur : The premium metallic build of the watch is not only aesthetically pleasing but also robust. It exudes a sense of quality and durability, making it suitable for any occasion. The round dial design adds a touch of sophistication to your wrist.\n\nBluetooth calling is a standout feature, allowing you to answer calls directly from your smartwatch. It's incredibly convenient and helps you stay connected without having to reach for your phone constantly. Smart Gesture Control simplifies navigation, making the user experience seamless and intuitive.",
-        "id": 4
-      }
-    ]
-  }
+  "maincategory": [
+    {
+      "id": 0
+    },
+    {
+      "name": "Male",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Kids"
+    },
+    {
+      "name": "Female",
+      "id": 5
+    }
+  ],
+  "subcategory": [
+    {
+      "id": 0
+    },
+    {
+      "name": "Trouser",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Shirt"
+    },
+    {
+      "name": "Jeans",
+      "id": 3
+    },
+    {
+      "name": "Frock",
+      "id": 4
+    },
+    {
+      "name": "Shorts",
+      "id": 5
+    },
+    {
+      "name": "Caps",
+      "id": 6
+    },
+    {
+      "name": "Underwear",
+      "id": 7
+    },
+    {
+      "name": "Sweater",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "name": "Tshirt"
+    }
+  ],
+  "brand": [
+    {
+      "id": 0
+    },
+    {
+      "name": "Mufti",
+      "id": 1
+    },
+    {
+      "name": "Gucci",
+      "id": 2
+    },
+    {
+      "name": "Levis",
+      "id": 3
+    },
+    {
+      "name": "Jocky",
+      "id": 4
+    },
+    {
+      "name": "Nike",
+      "id": 5
+    },
+    {
+      "name": "Sparky",
+      "id": 6
+    }
+  ],
+  "product": [
+    {
+      "id": 0
+    },
+    {
+      "id": 2,
+      "name": "Male Jeans Regular Fit",
+      "maincategory": "Male",
+      "subcategory": "Jeans",
+      "brand": "Mufti",
+      "color": "Black",
+      "size": "36",
+      "baseprice": 4500,
+      "discount": 50,
+      "finalprice": 2250,
+      "stock": "In Stock",
+      "description": "This is a Sample Product",
+      "pic1": "p7.jpg",
+      "pic2": "p5.jpg",
+      "pic3": "p1.jpg",
+      "pic4": "p2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Male Jeans Black",
+      "maincategory": "Male",
+      "subcategory": "Jeans",
+      "brand": "Tommy Hilfiger",
+      "color": "Blue",
+      "size": "36",
+      "baseprice": "6500",
+      "discount": "65",
+      "finalprice": 2275,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p5.jpg",
+      "pic2": "p2.jpg",
+      "pic3": "p1.jpg",
+      "pic4": "p7.jpg"
+    },
+    {
+      "name": "Male Jeans Blue",
+      "maincategory": "Male",
+      "subcategory": "Jeans",
+      "brand": "Adidas",
+      "color": "Blue",
+      "size": "34",
+      "baseprice": "48700",
+      "discount": "87",
+      "finalprice": 6331,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p1.jpg",
+      "pic2": "p2.jpg",
+      "pic3": "p5.jpg",
+      "pic4": "p10.jpg",
+      "id": 4
+    },
+    {
+      "name": "Male Tshirt Polo",
+      "maincategory": "Male",
+      "subcategory": "Tshirt",
+      "brand": "Polo",
+      "color": "White",
+      "size": "MD",
+      "baseprice": "4500",
+      "discount": "80",
+      "finalprice": 900,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p2.jpg",
+      "pic2": "p15.jpg",
+      "pic3": "p24.jpg",
+      "pic4": "p29.jpg",
+      "id": 5
+    },
+    {
+      "name": "Male Shirt Nike",
+      "maincategory": "Male",
+      "subcategory": "Shirt",
+      "brand": "Nike",
+      "color": "Green Check",
+      "size": "XL",
+      "baseprice": "4500",
+      "discount": "90",
+      "finalprice": 450,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p25.jpg",
+      "pic2": "p26.jpg",
+      "pic3": "p40.jpg",
+      "pic4": "p38.jpg",
+      "id": 6
+    },
+    {
+      "name": "Male Tshirt Black Adidas",
+      "maincategory": "Male",
+      "subcategory": "Tshirt",
+      "brand": "Adidas",
+      "color": "Black",
+      "size": "XXL",
+      "baseprice": "15000",
+      "discount": "80",
+      "finalprice": 3000,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p3.jpg",
+      "pic2": "p51.jpg",
+      "pic3": "p52.jpg",
+      "pic4": "p49.jpg",
+      "id": 7
+    },
+    {
+      "name": "Male Trouser Polo",
+      "maincategory": "Male",
+      "subcategory": "Trouser",
+      "brand": "Polo",
+      "color": "Black",
+      "size": "34",
+      "baseprice": "8500",
+      "discount": "85",
+      "finalprice": 1275,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p10.jpg",
+      "pic2": "p11.jpg",
+      "pic3": "p41.jpg",
+      "pic4": "p44.jpg",
+      "id": 8
+    },
+    {
+      "name": "Female Jeans Slim Fit",
+      "maincategory": "Female",
+      "subcategory": "Jeans",
+      "brand": "Mufti",
+      "color": "Blue",
+      "size": "32",
+      "baseprice": "4500",
+      "discount": "45",
+      "finalprice": 2475,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p12.jpg",
+      "pic2": "p17.jpg",
+      "pic3": "p19.jpg",
+      "pic4": "p47.jpg",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "name": "Female Jeans Mufti",
+      "maincategory": "Female",
+      "subcategory": "Jeans",
+      "brand": "Mufti",
+      "color": "Blue",
+      "size": "28",
+      "baseprice": "8580",
+      "discount": "80",
+      "finalprice": 1716,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p32.jpg",
+      "pic2": "p12.jpg",
+      "pic3": "p53.jpg",
+      "pic4": "p73.jpg"
+    },
+    {
+      "name": "Female Tshirt Adidas",
+      "maincategory": "Female",
+      "subcategory": "Tshirt",
+      "brand": "Adidas",
+      "color": "White",
+      "size": "MD",
+      "baseprice": "4500",
+      "discount": "45",
+      "finalprice": 2475,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p22.jpg",
+      "pic2": "p28.jpg",
+      "pic3": "p39.jpg",
+      "pic4": "p23.jpg",
+      "id": 11
+    },
+    {
+      "name": "Female Tshirt White Mufti",
+      "maincategory": "Female",
+      "subcategory": "Tshirt",
+      "brand": "Mufti",
+      "color": "White",
+      "size": "M",
+      "baseprice": "2500",
+      "discount": "85",
+      "finalprice": 375,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p23.jpg",
+      "pic2": "p28.jpg",
+      "pic3": "p19.jpg",
+      "pic4": "p6.jpg",
+      "id": 12
+    },
+    {
+      "name": "Female Shirt Gucci",
+      "maincategory": "Female",
+      "subcategory": "Shirt",
+      "brand": "Gucci",
+      "color": "White",
+      "size": "M",
+      "baseprice": "8585",
+      "discount": "25",
+      "finalprice": 6439,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p72.jpg",
+      "pic2": "p71.jpg",
+      "pic3": "p70.jpg",
+      "pic4": "p9.jpg",
+      "id": 13
+    },
+    {
+      "name": "Kids Jeans Tommy Hilfiger",
+      "maincategory": "Kids",
+      "subcategory": "Jeans",
+      "brand": "Tommy Hilfiger",
+      "color": "Black",
+      "size": "26",
+      "baseprice": "5000",
+      "discount": "50",
+      "finalprice": 2500,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p43.jpg",
+      "pic2": "p43.jpg",
+      "pic3": "p42.jpg",
+      "pic4": "p66.jpg",
+      "id": 14
+    },
+    {
+      "name": "Male Jeans",
+      "maincategory": "Male",
+      "subcategory": "Jeans",
+      "brand": "Adidas",
+      "color": "Black",
+      "size": "34",
+      "baseprice": "4500",
+      "discount": "45",
+      "finalprice": 2475,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p16.jpg",
+      "pic2": "p7.jpg",
+      "pic3": "p44.jpg",
+      "pic4": "p5.jpg",
+      "id": 15
+    },
+    {
+      "name": "Male Jeans Regular Fit",
+      "maincategory": "Male",
+      "subcategory": "Jeans",
+      "brand": "Adidas",
+      "color": "Blue",
+      "size": "34",
+      "baseprice": "8585",
+      "discount": "85",
+      "finalprice": 1288,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p44.jpg",
+      "pic2": "p7.jpg",
+      "pic3": "p2.jpg",
+      "pic4": "p11.jpg",
+      "id": 16
+    },
+    {
+      "name": "Male Jeans Ripped",
+      "maincategory": "Male",
+      "subcategory": "Jeans",
+      "brand": "Adidas",
+      "color": "Black",
+      "size": "32",
+      "baseprice": "9850",
+      "discount": "50",
+      "finalprice": 4925,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p41.jpg",
+      "pic2": "p10.jpg",
+      "pic3": "p2.jpg",
+      "pic4": "p1.jpg",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "name": "Male Jeans Slim  Fit",
+      "maincategory": "Male",
+      "subcategory": "Jeans",
+      "brand": "Mufti",
+      "color": "Black",
+      "size": "36",
+      "baseprice": "7800",
+      "discount": "78",
+      "finalprice": 1716,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p16.jpg",
+      "pic2": "p1.jpg",
+      "pic3": "p2.jpg",
+      "pic4": "p7.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Mufti Slim Fit Jeans Trending",
+      "maincategory": "Male",
+      "subcategory": "Jeans",
+      "brand": "Mufti",
+      "color": "Blue",
+      "size": "XL",
+      "baseprice": 25000,
+      "finalprice": 12500,
+      "discount": 50,
+      "stock": "In stock",
+      "description": "Trending Mufti Extra Large Blue Jeans.",
+      "pic1": "p23.jpg",
+      "pic2": "p13.jpg",
+      "pic3": "p22.jpg",
+      "pic4": "p25.jpg"
+    }
+  ],
+  "user": [
+    {
+      "id": 0
+    },
+    {
+      "name": "Sanjay kumar",
+      "email": "ssm.mrsanjay97@gmail.com",
+      "phone": "7542006442",
+      "address": "D-7, Sector 56\n",
+      "pin": "201307",
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "pic": "admin-pic.jpg",
+      "username": "sanjay@97",
+      "id": 1,
+      "password": "okay",
+      "role": "Admin"
+    },
+    {
+      "name": "Ajay Kumar Maurya",
+      "email": "chandan.muk88@gmail.com",
+      "phone": "7503678984",
+      "address": "B-35, Sector 55, Noida,India",
+      "pin": "201301",
+      "city": "Noida",
+      "state": "UP",
+      "pic": "testimonial-2.jpg",
+      "username": "ajay",
+      "password": "ajay",
+      "role": "Buyer",
+      "id": 2
+    },
+    {
+      "name": "a",
+      "username": "a",
+      "email": "ssm.mrsanjay97@gmail.com",
+      "phone": "09971641385",
+      "password": "a",
+      "role": "Buyer",
+      "id": 3
+    }
+  ],
+  "cart": [
+    {
+      "id": 0
+    },
+    {
+      "userid": null,
+      "productid": "14",
+      "name": "Kids Jeans Tommy Hilfiger",
+      "brand": "Tommy Hilfiger",
+      "color": "Black",
+      "size": "26",
+      "price": 2500,
+      "qty": 1,
+      "total": 2500,
+      "pic": "p43.jpg",
+      "id": 1
+    }
+  ],
+  "wishlist": [
+    {
+      "id": 0
+    },
+    {
+      "userid": "2",
+      "productid": "18",
+      "name": "Male Jeans Slim  Fit",
+      "brand": "Mufti",
+      "color": "Black",
+      "size": "36",
+      "price": 1716,
+      "pic": "p16.jpg",
+      "id": 1
+    },
+    {
+      "userid": "2",
+      "productid": "12",
+      "name": "Female Tshirt White Mufti",
+      "brand": "Mufti",
+      "color": "White",
+      "size": "M",
+      "price": 375,
+      "pic": "p23.jpg",
+      "id": 2
+    }
+  ],
+  "checkout": [
+    {
+      "id": 0
+    },
+    {
+      "userid": "2",
+      "paymentmode": "COD",
+      "paymentstatus": "Done",
+      "orderstatus": "Delivered",
+      "shipping": 0,
+      "subtotal": 34756,
+      "total": 34756,
+      "date": "2023-11-07T05:24:08.902Z",
+      "products": [
+        {
+          "userid": "2",
+          "productid": "2",
+          "name": "Male Jeans Regular Fit",
+          "brand": "Mufti",
+          "color": "Black",
+          "size": "36",
+          "price": 2250,
+          "qty": 4,
+          "total": 9000,
+          "pic": "p7.jpg",
+          "id": 1
+        },
+        {
+          "userid": "2",
+          "productid": "13",
+          "name": "Female Shirt Gucci",
+          "brand": "Gucci",
+          "color": "White",
+          "size": "M",
+          "price": 6439,
+          "qty": 4,
+          "total": 25756,
+          "pic": "p72.jpg",
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userid": "2",
+      "paymentmode": "NetBanking/Card/UPI",
+      "paymentstatus": "Pending",
+      "orderstatus": "Order is Placed",
+      "shipping": 0,
+      "subtotal": 5148,
+      "total": 5148,
+      "date": "2023-11-09T12:37:05.057Z",
+      "products": [
+        {
+          "userid": "2",
+          "productid": "18",
+          "name": "Male Jeans Slim  Fit",
+          "brand": "Mufti",
+          "color": "Black",
+          "size": "36",
+          "price": 1716,
+          "qty": 3,
+          "total": 5148,
+          "pic": "p16.jpg",
+          "id": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userid": "2",
+      "paymentmode": "COD",
+      "paymentstatus": "Pending",
+      "orderstatus": "Order is Placed",
+      "shipping": 0,
+      "subtotal": 1716,
+      "total": 1716,
+      "date": "2023-11-10T06:37:08.154Z",
+      "products": [
+        {
+          "userid": "2",
+          "productid": "18",
+          "name": "Male Jeans Slim  Fit",
+          "brand": "Mufti",
+          "color": "Black",
+          "size": "36",
+          "price": 1716,
+          "qty": 1,
+          "total": 1716,
+          "pic": "p16.jpg",
+          "id": 2
+        }
+      ],
+      "id": 3
+    },
+    {
+      "userid": "1",
+      "paymentmode": "COD",
+      "paymentstatus": "Pending",
+      "orderstatus": "Order is Placed",
+      "shipping": 0,
+      "subtotal": 1716,
+      "total": 1716,
+      "date": "2023-11-13T06:14:15.583Z",
+      "products": [
+        {
+          "userid": "1",
+          "productid": "18",
+          "name": "Male Jeans Slim  Fit",
+          "brand": "Mufti",
+          "color": "Black",
+          "size": "36",
+          "price": 1716,
+          "qty": 1,
+          "total": 1716,
+          "pic": "p16.jpg",
+          "id": 4
+        }
+      ],
+      "id": 4
+    },
+    {
+      "userid": "1",
+      "paymentmode": "NetBanking/Card/UPI",
+      "paymentstatus": "Pending",
+      "orderstatus": "Order is Placed",
+      "shipping": 0,
+      "subtotal": 1716,
+      "total": 1716,
+      "date": "2023-11-13T06:18:13.537Z",
+      "products": [
+        {
+          "userid": "1",
+          "productid": "18",
+          "name": "Male Jeans Slim  Fit",
+          "brand": "Mufti",
+          "color": "Black",
+          "size": "36",
+          "price": 1716,
+          "qty": 1,
+          "total": 1716,
+          "pic": "p16.jpg",
+          "id": 4
+        }
+      ],
+      "id": 5
+    },
+    {
+      "userid": "2",
+      "paymentmode": "COD",
+      "paymentstatus": "Pending",
+      "orderstatus": "Order is Placed",
+      "shipping": 0,
+      "subtotal": 2616,
+      "total": 2616,
+      "date": "2023-11-27T07:09:12.510Z",
+      "products": [
+        {
+          "userid": "2",
+          "productid": "6",
+          "name": "Male Shirt Nike",
+          "brand": "Nike",
+          "color": "Green Check",
+          "size": "XL",
+          "price": 450,
+          "qty": 2,
+          "total": 900,
+          "pic": "p25.jpg",
+          "id": 2
+        },
+        {
+          "userid": "2",
+          "productid": "18",
+          "name": "Male Jeans Slim  Fit",
+          "brand": "Mufti",
+          "color": "Black",
+          "size": "36",
+          "price": 1716,
+          "qty": 1,
+          "total": 1716,
+          "pic": "p16.jpg",
+          "id": 3
+        }
+      ],
+      "id": 6
+    }
+  ],
+  "newsletter": [
+    {
+      "id": 0
+    },
+    {
+      "email": "chandan.muk88@gmail.com",
+      "id": 1
+    }
+  ],
+  "contactus": [
+    {
+      "id": 0
+    },
+    {
+      "name": "Chandan Kumar",
+      "email": "chandan.muk88@gmail.com",
+      "phone": "09971641385",
+      "subject": "Mouse",
+      "message": "My Mouse is not working well. It's not taking that much faster as it used to be.",
+      "date": "2023-11-07T08:48:06.954Z",
+      "status": "Active",
+      "id": 1
+    }
+  ],
+  "testimonial": [
+    {
+      "id": 0
+    },
+    {
+      "name": "Nitin Chauhan",
+      "profile": "Full Stack Trainer",
+      "pic": "testimonial-3.jpg",
+      "message": "The Noise Halo Plus Elite Smartwatch is a true marvel of technology that has left me impressed beyond measure. As an avid tech enthusiast and fitness aficionado, I've had the pleasure of testing numerous smartwatches, but none have come close to the experience offered by the Halo Plus Elite.",
+      "id": 1
+    },
+    {
+      "name": "Sumit Kumar",
+      "profile": "Bank Manager",
+      "pic": "team-4.jpg",
+      "message": "The watch hangs up frequently. Sometimes when charge goes below 50%, sometimes above 60%. Again you have to restart or reboot the watch. That is the only problem. I am using it when I go for walk. Not calling on blue tooth etc.",
+      "id": 2
+    },
+    {
+      "name": "Mohan Mishra",
+      "profile": "Bankars",
+      "pic": "testimonial-2.jpg",
+      "message": "Very good quality and main thing about touch screen working very smoothly. But one point tha noise company should give some notice on straps . But all over this watch at this price very good and looks cool",
+      "id": 3
+    },
+    {
+      "name": "Kanak Thakurs",
+      "profile": "Teacherss",
+      "pic": "testimonial-1.jpg",
+      "message": "Kanika Thakur : The premium metallic build of the watch is not only aesthetically pleasing but also robust. It exudes a sense of quality and durability, making it suitable for any occasion. The round dial design adds a touch of sophistication to your wrist.\n\nBluetooth calling is a standout feature, allowing you to answer calls directly from your smartwatch. It's incredibly convenient and helps you stay connected without having to reach for your phone constantly. Smart Gesture Control simplifies navigation, making the user experience seamless and intuitive.",
+      "id": 4
+    }
+  ]
 }

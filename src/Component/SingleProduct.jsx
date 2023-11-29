@@ -307,14 +307,16 @@ export default function SingleProduct() {
                   <tr>
                     <td colSpan={2}>
                       <button
-                        className="btn btn-primary w-50"
+                        className="btn btn-primary p-1"
                         onClick={addToCart}
+                        style={{ width: "48%" }}
                       >
                         <i className="fa fa-shopping-cart"></i> Add to Cart
                       </button>
                       <button
-                        className="btn btn-success w-50"
+                        className="btn btn-success p-1"
                         onClick={addToWishlist}
+                        style={{ width: "52%" }}
                       >
                         <i className="fa fa-heart"></i> Add to Wishlist
                       </button>

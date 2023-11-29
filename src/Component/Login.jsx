@@ -41,7 +41,7 @@ export default function Login() {
 
   async function postData(e) {
     e.preventDefault();
-    let response = await fetch("/user", {
+    let response = await fetch("https://kifayatidb.onrender.com/user", {
       method: "get",
       headers: {
         "content-type": "application/json",

@@ -38,12 +38,15 @@ export default function Checkout() {
   }
 
   async function getApiData() {
-    let response = await fetch("/user/" + localStorage.getItem("userid"), {
-      method: "get",
-      headers: {
-        "content-type": "application/json",
-      },
-    });
+    let response = await fetch(
+      "/https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
+      {
+        method: "get",
+        headers: {
+          "content-type": "application/json",
+        },
+      }
+    );
     response = await response.json();
     setUser(response);
     dispatch(getCart());

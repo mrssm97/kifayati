@@ -58,24 +58,30 @@ export default function UpdateProfile() {
 
   async function postData(e) {
     e.preventDefault();
-    await fetch("/user/" + localStorage.getItem("userid"), {
-      method: "put",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({ ...data }),
-    });
+    await fetch(
+      "/https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
+      {
+        method: "put",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({ ...data }),
+      }
+    );
     if (data.role === "Admin") navigate("/admin");
     else navigate("/profile");
   }
 
   async function getApiData() {
-    let response = await fetch("/user/" + localStorage.getItem("userid"), {
-      method: "get",
-      headers: {
-        "content-type": "apllication/json",
-      },
-    });
+    let response = await fetch(
+      "/https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
+      {
+        method: "get",
+        headers: {
+          "content-type": "apllication/json",
+        },
+      }
+    );
 
     response = await response.json();
 

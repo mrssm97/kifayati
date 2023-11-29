@@ -22,12 +22,15 @@ export default function Profile() {
   }
 
   async function getApiData() {
-    let response = await fetch("/user/" + localStorage.getItem("userid"), {
-      method: "get",
-      headers: {
-        "content-type": "apllication/json",
-      },
-    });
+    let response = await fetch(
+      "/https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
+      {
+        method: "get",
+        headers: {
+          "content-type": "apllication/json",
+        },
+      }
+    );
     response = await response.json();
     setUser(response);
 

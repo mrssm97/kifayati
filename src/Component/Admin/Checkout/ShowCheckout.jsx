@@ -44,12 +44,15 @@ export default function ShowCheckout() {
     if (CheckoutStateData.length) {
       let item = CheckoutStateData.slice(1).find((x) => x.id === Number(id));
       setData(item);
-      let response = await fetch("/user/" + item.userid, {
-        method: "get",
-        headers: {
-          "content-type": "application/json",
-        },
-      });
+      let response = await fetch(
+        "/https://kifayatidb.onrender.com/user/" + item.userid,
+        {
+          method: "get",
+          headers: {
+            "content-type": "application/json",
+          },
+        }
+      );
       response = await response.json();
       setUser(response);
       setOrderStatus(item.orderstatus);

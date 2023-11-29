@@ -5,12 +5,15 @@ import { Link } from "react-router-dom";
 export default function AdminHome() {
   const [user, setUser] = useState({});
   async function getApiData() {
-    let response = await fetch("/user/" + localStorage.getItem("userid"), {
-      method: "get",
-      headers: {
-        "content-type": "apllication/json",
-      },
-    });
+    let response = await fetch(
+      "/https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
+      {
+        method: "get",
+        headers: {
+          "content-type": "apllication/json",
+        },
+      }
+    );
     response = await response.json();
     setUser(response);
   }

@@ -7,7 +7,7 @@ export default function Footer() {
   const [message, setMessage] = useState("");
 
   async function postData() {
-    let response = await fetch("/newsletter", {
+    let response = await fetch("https://kifayatidb.onrender.com/newsletter", {
       method: "get",
       headers: {
         "content-type": "application/json",
@@ -18,7 +18,7 @@ export default function Footer() {
     setShow(true);
     if (item) setMessage("Your Email Address is Already Registered With Us!!");
     else {
-      response = await fetch("/newsletter", {
+      response = await fetch("https://kifayatidb.onrender.com/newsletter", {
         method: "post",
         headers: {
           "content-type": "application/json",

@@ -3,10 +3,13 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 module.exports = function (app) {
   app.use(
-    "api",
+    "/api",
     createProxyMiddleware({
-      target: "https://kifayatidb.onrender.com/",
+      target: "https://kifayatidb.onrender.com",
       changeOrigin: true,
+      pathRewrite: {
+        "^/api": "", // This will remove /api from the URL.
+      },
     })
   );
 };

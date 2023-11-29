@@ -49,7 +49,7 @@ export default function Signup() {
   async function postData(e) {
     e.preventDefault();
     if (data.password === data.cpassword) {
-      let response = await fetch("/user", {
+      let response = await fetch("https://kifayatidb.onrender.com/user", {
         method: "get",
         headers: {
           "content-type": "application/json",
@@ -69,7 +69,7 @@ export default function Signup() {
           password: data.password,
           role: "Buyer",
         };
-        response = await fetch("/user", {
+        response = await fetch("https://kifayatidb.onrender.com/user", {
           method: "post",
           headers: {
             "content-type": "application/json",
