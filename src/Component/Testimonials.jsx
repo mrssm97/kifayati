@@ -34,7 +34,7 @@ export default function Testimonials() {
                   <div key={index} className="testimonial-item text-center">
                     <img
                       className="bg-light rounded-circle p-2 mx-auto mb-3"
-                      src={`/kifayati/img/${item.pic}`}
+                      src={`/img/${item.pic}`}
                       style={{ width: "80px", height: "80px" }}
                       alt="pic"
                     />

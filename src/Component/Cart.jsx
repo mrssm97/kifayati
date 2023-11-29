@@ -99,7 +99,7 @@ export default function Cart() {
                             rel="noreferrer"
                           >
                             <img
-                              src={`/kifayati/products/${item.pic}`}
+                              src={`/products/${item.pic}`}
                               className="rounded-1"
                               height="80px"
                               width="80px"

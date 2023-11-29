@@ -43,11 +43,7 @@ export default function About() {
             >
               <div className="d-flex py-5 px-2">
                 <i className="text-primary flex-shrink-0">
-                  <img
-                    src="/kifayati/img/fast-delivery.png"
-                    height="120px"
-                    alt=""
-                  />
+                  <img src="/img/fast-delivery.png" height="120px" alt="" />
                 </i>
 
                 <div className="ps-4">
@@ -62,11 +58,7 @@ export default function About() {
             >
               <div className="d-flex bg-light py-5 px-4">
                 <i className="text-primary flex-shrink-0">
-                  <img
-                    src="/kifayati/img/refund-policy.png"
-                    height="75px"
-                    alt=""
-                  />
+                  <img src="/img/refund-policy.png" height="75px" alt="" />
                 </i>
                 <div className="ps-4">
                   <h5 className="mb-3">100% Refund Policy</h5>
@@ -80,7 +72,7 @@ export default function About() {
             >
               <div className="d-flex py-5 px-4">
                 <i className=" text-primary flex-shrink-0">
-                  <img src="/kifayati/img/quality.png" height="75px" alt="" />
+                  <img src="/img/quality.png" height="75px" alt="" />
                 </i>
                 <div className="ps-4">
                   <h5 className="mb-3">100% Original Product</h5>
@@ -104,7 +96,7 @@ export default function About() {
               >
                 <img
                   className="position-absolute img-fluid w-100 h-100"
-                  src="/kifayati/img/about.jpg"
+                  src="/img/about.jpg"
                   style={{ objectFit: "cover" }}
                   alt=""
                 />

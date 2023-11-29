@@ -6,7 +6,7 @@ export default function AdminHome() {
   const [user, setUser] = useState({});
   async function getApiData() {
     let response = await fetch(
-      "/https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
+      "https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
       {
         method: "get",
         headers: {
@@ -35,14 +35,14 @@ export default function AdminHome() {
               <div className="col-md-6">
                 {user.pic ? (
                   <img
-                    src={`/kifayati/img/${user.pic}`}
+                    src={`/img/${user.pic}`}
                     height={"400px"}
                     width="100%"
                     alt=""
                   />
                 ) : (
                   <img
-                    src={`/kifayati/products/nouser.png`}
+                    src={`/products/nouser.png`}
                     height={"400px"}
                     width="100%"
                     alt=""

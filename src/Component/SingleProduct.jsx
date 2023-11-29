@@ -141,7 +141,7 @@ export default function SingleProduct() {
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <img
-                    src={`/kifayati/products/${data.pic1}`}
+                    src={`/products/${data.pic1}`}
                     height={"500px"}
                     className="d-block w-100"
                     alt="..."
@@ -149,7 +149,7 @@ export default function SingleProduct() {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src={`/kifayati/products/${data.pic2}`}
+                    src={`/products/${data.pic2}`}
                     height={"500px"}
                     className="d-block w-100"
                     alt="..."
@@ -157,7 +157,7 @@ export default function SingleProduct() {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src={`/kifayati/products/${data.pic3}`}
+                    src={`/products/${data.pic3}`}
                     height={"500px"}
                     className="d-block w-100"
                     alt="..."
@@ -165,7 +165,7 @@ export default function SingleProduct() {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src={`/kifayati/products/${data.pic4}`}
+                    src={`/products/${data.pic4}`}
                     height={"500px"}
                     className="d-block w-100"
                     alt="..."
@@ -199,7 +199,7 @@ export default function SingleProduct() {
             </div>
             <div className="d-flex justify-content-between mt-1">
               <img
-                src={`/kifayati/products/${data.pic1}`}
+                src={`/products/${data.pic1}`}
                 height={"100px"}
                 width={"24.7%"}
                 className="active"
@@ -209,7 +209,7 @@ export default function SingleProduct() {
                 aria-label="Slide 1"
               />
               <img
-                src={`/kifayati/products/${data.pic2}`}
+                src={`/products/${data.pic2}`}
                 height={"100px"}
                 width={"24.7%"}
                 alt=""
@@ -218,7 +218,7 @@ export default function SingleProduct() {
                 aria-label="Slide 2"
               />
               <img
-                src={`/kifayati/products/${data.pic3}`}
+                src={`/products/${data.pic3}`}
                 height={"100px"}
                 width={"24.7%"}
                 alt=""
@@ -227,7 +227,7 @@ export default function SingleProduct() {
                 aria-label="Slide 3"
               />
               <img
-                src={`/kifayati/products/${data.pic4}`}
+                src={`/products/${data.pic4}`}
                 height={"100px"}
                 width={"24.7%"}
                 alt=""
@@ -344,13 +344,13 @@ export default function SingleProduct() {
                       <div className="position-relative overflow-hidden">
                         <img
                           className="img-fluid"
-                          src={`/kifayati/products/${item.pic1}`}
+                          src={`/products/${item.pic1}`}
                           style={{ height: "230px", width: "100%" }}
                           alt=""
                         />
                         <div className="team-overlay position-absolute start-0 top-0 w-100 h-100">
                           <img
-                            src={`/kifayati/products/${item.pic2}`}
+                            src={`/products/${item.pic2}`}
                             className="position-absolute start-0 top-0 w-100 h-100 z-1"
                             style={{ height: "230px", width: "100%" }}
                             alt=""

@@ -59,7 +59,7 @@ export default function UpdateProfile() {
   async function postData(e) {
     e.preventDefault();
     await fetch(
-      "/https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
+      "https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
       {
         method: "put",
         headers: {
@@ -74,7 +74,7 @@ export default function UpdateProfile() {
 
   async function getApiData() {
     let response = await fetch(
-      "/https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
+      "https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
       {
         method: "get",
         headers: {

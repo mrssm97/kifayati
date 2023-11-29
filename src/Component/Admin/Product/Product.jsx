@@ -91,7 +91,7 @@ export default function Product() {
                             rel="noreferrer"
                           >
                             <img
-                              src={`/kifayati/products/${item.pic1}`}
+                              src={`/products/${item.pic1}`}
                               height="80px"
                               width="80px"
                               className="rounded"
@@ -106,7 +106,7 @@ export default function Product() {
                             rel="noreferrer"
                           >
                             <img
-                              src={`/kifayati/products/${item.pic2}`}
+                              src={`/products/${item.pic2}`}
                               height="80px"
                               width="80px"
                               className="rounded"
@@ -121,7 +121,7 @@ export default function Product() {
                             rel="noreferrer"
                           >
                             <img
-                              src={`/kifayati/products/${item.pic3}`}
+                              src={`/products/${item.pic3}`}
                               height="80px"
                               width="80px"
                               className="rounded"
@@ -136,7 +136,7 @@ export default function Product() {
                             rel="noreferrer"
                           >
                             <img
-                              src={`/kifayati/products/${item.pic4}`}
+                              src={`/products/${item.pic4}`}
                               height="80px"
                               width="80px"
                               className="rounded"

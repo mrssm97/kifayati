@@ -39,7 +39,7 @@ export default function Checkout() {
 
   async function getApiData() {
     let response = await fetch(
-      "/https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
+      "https://kifayatidb.onrender.com/user/" + localStorage.getItem("userid"),
       {
         method: "get",
         headers: {

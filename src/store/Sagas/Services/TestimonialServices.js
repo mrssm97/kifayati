@@ -20,7 +20,7 @@ export async function getRecord() {
 }
 export async function updateRecord(payload) {
   let response = await fetch(
-    "/https://kifayatidb.onrender.com/testimonial/" + payload.id,
+    "https://kifayatidb.onrender.com/testimonial/" + payload.id,
     {
       method: "put",
       headers: {
@@ -33,7 +33,7 @@ export async function updateRecord(payload) {
 }
 export async function deleteRecord(payload) {
   let response = await fetch(
-    "/https://kifayatidb.onrender.com/testimonial/" + payload.id,
+    "https://kifayatidb.onrender.com/testimonial/" + payload.id,
     {
       method: "delete",
       headers: {

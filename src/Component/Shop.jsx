@@ -301,13 +301,13 @@ export default function Shop() {
                       <div className="position-relative overflow-hidden">
                         <img
                           className="img-fluid"
-                          src={`/kifayati/products/${item.pic1}`}
+                          src={`/products/${item.pic1}`}
                           style={{ height: "230px", width: "100%" }}
                           alt=""
                         />
                         <div className="team-overlay position-absolute start-0 top-0 w-100 h-100">
                           <img
-                            src={`/kifayati/products/${item.pic2}`}
+                            src={`/products/${item.pic2}`}
                             className="position-absolute start-0 top-0 w-100 h-100 z-1"
                             style={{ height: "230px", width: "100%" }}
                             alt=""

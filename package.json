@@ -2,7 +2,6 @@
   "name": "bestcart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mrssm97.github.io/kifayati",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

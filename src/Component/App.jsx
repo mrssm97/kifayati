@@ -53,7 +53,7 @@ export default function App() {
   });
   return (
     <>
-      <BrowserRouter basename="/kifayati">
+      <BrowserRouter>
         <Navbar storage={storage} setProfile={setStorage} />
         <Routes>
           {/*Public Access*/}

@@ -45,7 +45,7 @@ export default function ShowCheckout() {
       let item = CheckoutStateData.slice(1).find((x) => x.id === Number(id));
       setData(item);
       let response = await fetch(
-        "/https://kifayatidb.onrender.com/user/" + item.userid,
+        "https://kifayatidb.onrender.com/user/" + item.userid,
         {
           method: "get",
           headers: {
@@ -211,7 +211,7 @@ export default function ShowCheckout() {
                                 rel="noreferrer"
                               >
                                 <img
-                                  src={`/kifayati/products/${item.pic}`}
+                                  src={`/products/${item.pic}`}
                                   height="80px"
                                   width="80px"
                                   className="rounded-1"

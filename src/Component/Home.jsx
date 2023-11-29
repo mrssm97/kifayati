@@ -33,7 +33,7 @@ export default function Home() {
             <div className="carousel-item active">
               <img
                 className="w-100"
-                src="/kifayati/img/carousel-bg-1.jpg"
+                src="/img/carousel-bg-1.jpg"
                 height="500px"
                 alt="pic1"
               />
@@ -57,7 +57,7 @@ export default function Home() {
                     <div className="col-lg-5 d-none d-lg-flex animated zoomIn">
                       <img
                         className="img-fluid"
-                        src="/kifayati/img/carousel-1.png"
+                        src="/img/carousel-1.png"
                         alt=""
                       />
                     </div>
@@ -68,7 +68,7 @@ export default function Home() {
             <div className="carousel-item">
               <img
                 className="w-100"
-                src="/kifayati/img/carousel-bg-2.jpg"
+                src="/img/carousel-bg-2.jpg"
                 height="500px"
                 alt="pic1"
               />
@@ -89,7 +89,7 @@ export default function Home() {
                     <div className="col-lg-5 d-none d-lg-flex animated zoomIn">
                       <img
                         className="img-fluid"
-                        src="/kifayati/img/carousel-2.png"
+                        src="/img/carousel-2.png"
                         alt=""
                       />
                     </div>
@@ -136,11 +136,7 @@ export default function Home() {
             >
               <div className="d-flex py-5 px-2">
                 <i className="text-primary flex-shrink-0">
-                  <img
-                    src="/kifayati/img/fast-delivery.png"
-                    height="120px"
-                    alt=""
-                  />
+                  <img src="/img/fast-delivery.png" height="120px" alt="" />
                 </i>
 
                 <div className="ps-4">
@@ -155,11 +151,7 @@ export default function Home() {
             >
               <div className="d-flex bg-light py-5 px-4">
                 <i className="text-primary flex-shrink-0">
-                  <img
-                    src="/kifayati/img/refund-policy.png"
-                    height="75px"
-                    alt=""
-                  />
+                  <img src="/img/refund-policy.png" height="75px" alt="" />
                 </i>
                 <div className="ps-4">
                   <h5 className="mb-3">100% Refund Policy</h5>
@@ -173,7 +165,7 @@ export default function Home() {
             >
               <div className="d-flex py-5 px-4">
                 <i className=" text-primary flex-shrink-0">
-                  <img src="/kifayati/img/quality.png" height="75px" alt="" />
+                  <img src="/img/quality.png" height="75px" alt="" />
                 </i>
                 <div className="ps-4">
                   <h5 className="mb-3">100% Original Product</h5>
@@ -244,13 +236,13 @@ export default function Home() {
                     <div className="position-relative overflow-hidden">
                       <img
                         className="img-fluid"
-                        src={`/kifayati/products/${item.pic1}`}
+                        src={`/products/${item.pic1}`}
                         style={{ height: "230px", width: "100%" }}
                         alt=""
                       />
                       <div className="team-overlay position-absolute start-0 top-0 w-100 h-100">
                         <img
-                          src={`/kifayati/products/${item.pic2}`}
+                          src={`/products/${item.pic2}`}
                           className="position-absolute start-0 top-0 w-100 h-100 z-1"
                           style={{ height: "230px", width: "100%" }}
                           alt=""

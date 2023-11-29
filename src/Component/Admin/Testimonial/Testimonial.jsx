@@ -67,7 +67,7 @@ export default function Testimonial() {
                           <td>{item.profile}</td>
                           <td>
                             <img
-                              src={`/kifayati/img/${item.pic}`}
+                              src={`/img/${item.pic}`}
                               height={"100px"}
                               width={"100px"}
                               alt=""

@@ -19,7 +19,7 @@ export async function getRecord() {
 }
 export async function deleteRecord(payload) {
   let response = await fetch(
-    "/https://kifayatidb.onrender.com/wishlist/" + payload.id,
+    "https://kifayatidb.onrender.com/wishlist/" + payload.id,
     {
       method: "delete",
       headers: {
