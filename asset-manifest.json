@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kifayati/static/css/main.64d6710f.css",
-    "main.js": "/kifayati/static/js/main.a6f47e27.js",
-    "index.html": "/kifayati/index.html",
-    "main.64d6710f.css.map": "/kifayati/static/css/main.64d6710f.css.map",
-    "main.a6f47e27.js.map": "/kifayati/static/js/main.a6f47e27.js.map"
+    "main.css": "/static/css/main.64d6710f.css",
+    "main.js": "/static/js/main.3152f8d2.js",
+    "index.html": "/index.html",
+    "main.64d6710f.css.map": "/static/css/main.64d6710f.css.map",
+    "main.3152f8d2.js.map": "/static/js/main.3152f8d2.js.map"
   },
   "entrypoints": [
     "static/css/main.64d6710f.css",
-    "static/js/main.a6f47e27.js"
+    "static/js/main.3152f8d2.js"
   ]
 }
