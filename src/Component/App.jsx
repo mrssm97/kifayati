@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -40,10 +40,9 @@ import ShowCheckout from "./Admin/Checkout/ShowCheckout";
 import NoAdminMessage from "./NoAdminMessage";
 export default function App() {
   const location = useLocation();
-  const [flag, setFlag] = useState(location.pathname);
   useEffect(() => {
-    setFlag(location.pathname);
-  }, [flag]);
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <>
