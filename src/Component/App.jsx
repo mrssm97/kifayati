@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -38,380 +38,376 @@ import ShowContact from "./Admin/ContactUs/ShowContactUs";
 import AdminCheckout from "./Admin/Checkout/AdminCheckout";
 import ShowCheckout from "./Admin/Checkout/ShowCheckout";
 import NoAdminMessage from "./NoAdminMessage";
-
 export default function App() {
+  const location = useLocation();
+  const [flag, setFlag] = useState(location.pathname);
   useEffect(() => {
-    console.log("useEffect() inside the app is called!");
-  }, [history.location.pathname]);
+    setFlag(location.pathname);
+  }, [flag]);
+
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          {/*Public Access*/}
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/product/:id" element={<SingleProduct />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          {/*User Login*/}
-          <Route
-            path="/profile"
-            element={
-              localStorage.getItem("login") === "true" ? <Profile /> : <Login />
-            }
-          />
-          <Route
-            path="/update-profile"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                <UpdateProfile />
+      <Navbar />
+      <Routes>
+        {/*Public Access*/}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/product/:id" element={<SingleProduct />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        {/*User Login*/}
+        <Route
+          path="/profile"
+          element={
+            localStorage.getItem("login") === "true" ? <Profile /> : <Login />
+          }
+        />
+        <Route
+          path="/update-profile"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              <UpdateProfile />
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/cart"
+          element={
+            localStorage.getItem("login") === "true" ? <Cart /> : <Login />
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            localStorage.getItem("login") === "true" ? <Checkout /> : <Login />
+          }
+        />
+        <Route
+          path="/confirmation"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              <Confirmation />
+            ) : (
+              <Login />
+            )
+          }
+        />
+        {/*Admin Login*/}
+        <Route
+          path="/admin"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <AdminHome />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/cart"
-            element={
-              localStorage.getItem("login") === "true" ? <Cart /> : <Login />
-            }
-          />
-          <Route
-            path="/checkout"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                <Checkout />
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/maincategory"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <MainCategory />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/confirmation"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                <Confirmation />
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/maincategory/create"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <CreateMainCategory />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          {/*Admin Login*/}
-          <Route
-            path="/admin"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <AdminHome />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/maincategory/update/:id"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <UpdateMainCategory />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/maincategory"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <MainCategory />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/subcategory"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <SubCategory />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/maincategory/create"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <CreateMainCategory />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/subcategory/create"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <CreateSubCategory />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/maincategory/update/:id"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <UpdateMainCategory />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/subcategory/update/:id"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <UpdateSubCategory />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/subcategory"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <SubCategory />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/brand"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <Brand />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/subcategory/create"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <CreateSubCategory />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/brand/create"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <CreateBrand />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/subcategory/update/:id"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <UpdateSubCategory />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/brand/update/:id"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <UpdateBrand />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/brand"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <Brand />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/product"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <Product />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/brand/create"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <CreateBrand />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/product/create"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <CreateProduct />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/brand/update/:id"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <UpdateBrand />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/product/update/:id"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <UpdateProduct />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/product"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <Product />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/users"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <User />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/product/create"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <CreateProduct />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/testimonial"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <Testimonial />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/product/update/:id"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <UpdateProduct />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/testimonial/create"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <CreateTestimonial />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/users"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <User />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/testimonial/update/:id"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <UpdateTestimonial />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/testimonial"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <Testimonial />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/newsletter"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <Newsletter />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/testimonial/create"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <CreateTestimonial />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/contactus"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <ContactUs />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/testimonial/update/:id"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <UpdateTestimonial />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/contactus/show/:id"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <ShowContact />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/newsletter"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <Newsletter />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/checkout"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <AdminCheckout />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/contactus"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <ContactUs />
-                ) : (
-                  <NoAdminMessage />
-                )
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route
+          path="/admin/checkout/show/:id"
+          element={
+            localStorage.getItem("login") === "true" ? (
+              localStorage.getItem("role") === "Admin" ? (
+                <ShowCheckout />
               ) : (
-                <Login />
+                <NoAdminMessage />
               )
-            }
-          />
-          <Route
-            path="/admin/contactus/show/:id"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <ShowContact />
-                ) : (
-                  <NoAdminMessage />
-                )
-              ) : (
-                <Login />
-              )
-            }
-          />
-          <Route
-            path="/admin/checkout"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <AdminCheckout />
-                ) : (
-                  <NoAdminMessage />
-                )
-              ) : (
-                <Login />
-              )
-            }
-          />
-          <Route
-            path="/admin/checkout/show/:id"
-            element={
-              localStorage.getItem("login") === "true" ? (
-                localStorage.getItem("role") === "Admin" ? (
-                  <ShowCheckout />
-                ) : (
-                  <NoAdminMessage />
-                )
-              ) : (
-                <Login />
-              )
-            }
-          />
-          <Route path="/*" element={<Error />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+            ) : (
+              <Login />
+            )
+          }
+        />
+        <Route path="/*" element={<Error />} />
+      </Routes>
+      <Footer />
     </>
   );
 }

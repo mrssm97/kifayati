@@ -54,7 +54,7 @@ export default function Login() {
         (x) => x.username === data.username && x.password === data.password
       );
     if (item) {
-      localStorage.setItem("login", true);
+      localStorage.setItem("login", "true");
       localStorage.setItem("userid", item.id);
       localStorage.setItem("name", item.name);
       localStorage.setItem("username", item.username);
@@ -63,7 +63,11 @@ export default function Login() {
       else navigate("/admin");
     } else setShow(true);
   }
-  useEffect(() => {}, [history.location.pathname]);
+  useEffect(() => {}, [
+    window.location.pathname,
+    localStorage.getItem("login"),
+    localStorage.getItem("role"),
+  ]);
   return (
     <>
       <Box
