@@ -40,6 +40,5 @@ export async function deleteRecord(payload) {
       },
     }
   );
-  console.log(URL + "/" + payload.id);
   return await response.json();
 }

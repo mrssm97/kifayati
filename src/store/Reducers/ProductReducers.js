@@ -33,7 +33,6 @@ export default function ProductReducers(state = [], action) {
       newState[index].pic2 = action.payload.pic2;
       newState[index].pic3 = action.payload.pic3;
       newState[index].pic4 = action.payload.pic4;
-      console.log("Product store updated!");
       return newState;
     }
     case DELETE_PRODUCT_RED: {

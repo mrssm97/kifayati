@@ -15,7 +15,6 @@ export async function getRecord() {
       "content-type": "application/json",
     },
   });
-  console.log(response);
   return await response.json();
 }
 export async function updateRecord(payload) {
@@ -41,6 +40,5 @@ export async function deleteRecord(payload) {
       },
     }
   );
-  console.log(URL + "/" + payload.id);
   return await response.json();
 }

@@ -41,7 +41,6 @@ export default function Cart() {
     dispatch(deleteCart({ id: id }));
   }
   function getApiData() {
-    console.log("Api called");
     dispatch(getCart());
     if (CartStateData.length) {
       let item = CartStateData.slice(1).filter(
@@ -66,7 +65,6 @@ export default function Cart() {
     getApiData();
     // eslint-disable-next-line
   }, [CartStateData.length, updatingDependency]);
-  console.log("cart rendered");
   return (
     <>
       <div className="container-fluid my-3">

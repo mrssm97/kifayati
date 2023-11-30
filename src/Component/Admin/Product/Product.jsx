@@ -10,7 +10,6 @@ export default function Product() {
   let [data, setData] = useState([]);
   let dispatch = useDispatch();
   let ProductStateData = useSelector((state) => state.ProductStateData);
-  console.log(ProductStateData);
   function deleteItem(id) {
     if (window.confirm(`Are you sure! Cofirm to delete that item! : `)) {
       dispatch(deleteProduct({ id: id }));
@@ -24,11 +23,8 @@ export default function Product() {
   }
   useEffect(() => {
     getApiData();
-    console.log("getApicalled");
-    // console.log(ProductStateData);
     //eslint-disable-next-line
   }, [ProductStateData.length]);
-  console.log("Product component called");
   return (
     <>
       {" "}

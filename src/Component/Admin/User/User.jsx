@@ -28,7 +28,6 @@ export default function User() {
     getApiData();
     // eslint-disable-next-line
   }, []);
-  console.log(data);
 
   return (
     <>

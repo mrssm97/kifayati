@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
@@ -63,6 +63,7 @@ export default function Login() {
       else navigate("/admin");
     } else setShow(true);
   }
+  useEffect(() => {}, [history.location.pathname]);
   return (
     <>
       <Box

@@ -21,7 +21,6 @@ function* add(action) {
   yield put({ type: ADD_TESTIMONIAL_RED, payload: response });
 }
 function* get() {
-  console.log("get called");
   let response = yield getRecord();
   yield put({ type: GET_TESTIMONIAL_RED, payload: response });
 }

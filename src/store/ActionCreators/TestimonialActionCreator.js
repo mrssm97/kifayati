@@ -9,7 +9,6 @@ export function addTestimonial(data) {
   return { type: ADD_TESTIMONIAL, payload: data };
 }
 export function getTestimonial() {
-  console.log("Action Creator called");
   return { type: GET_TESTIMONIAL };
 }
 export function updateTestimonial(data) {

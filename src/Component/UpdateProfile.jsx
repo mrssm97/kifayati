@@ -46,7 +46,6 @@ export default function UpdateProfile() {
     });
   }
   function getInputFile(e) {
-    console.log(e.target);
     var { name, files } = e.target;
     setData((old) => {
       return {

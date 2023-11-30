@@ -91,9 +91,6 @@ export default function SingleProduct() {
       }
     }
   }
-  console.log(CartStateData);
-  console.log(WishlistStateData);
-  // console.log(ProductStateData);
   useEffect(() => {
     getApiData();
     // eslint-disable-next-line

@@ -27,8 +27,6 @@ export default function Testimonial() {
     getApiData();
     // eslint-disable-next-line
   }, [TestimonialStateData.length]);
-  console.log(data);
-  console.log(TestimonialStateData);
   return (
     <>
       {" "}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -40,21 +40,13 @@ import ShowCheckout from "./Admin/Checkout/ShowCheckout";
 import NoAdminMessage from "./NoAdminMessage";
 
 export default function App() {
-  // const basename = document.querySelector("base")?.getAttribute("href");
-  const [storage, setStorage] = useState({
-    invalid: false,
-    remember: "",
-    login: localStorage.getItem("login"),
-    fName: localStorage.getItem("fName"),
-    lName: localStorage.getItem("lName"),
-    email: localStorage.getItem("email"),
-    password: localStorage.getItem("password"),
-    subscribe: localStorage.getItem("subscribe"),
-  });
+  useEffect(() => {
+    console.log("useEffect() inside the app is called!");
+  }, [history.location.pathname]);
   return (
     <>
       <BrowserRouter>
-        <Navbar storage={storage} setProfile={setStorage} />
+        <Navbar />
         <Routes>
           {/*Public Access*/}
           <Route path="/" element={<Home />} />
@@ -63,7 +55,7 @@ export default function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/product/:id" element={<SingleProduct />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup setProfile={setStorage} />} />
+          <Route path="/signup" element={<Signup />} />
           {/*User Login*/}
           <Route
             path="/profile"

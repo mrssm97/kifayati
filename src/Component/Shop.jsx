@@ -28,10 +28,7 @@ export default function Shop() {
   );
   let ProductStateData = useSelector((state) => state.ProductStateData);
   function categoryFilter(mc, sc, br, min = -1, max = -1) {
-    console.log(mc);
-    console.log("called");
     setMc(mc);
-    console.log(mc);
     setSc(sc);
     setBr(br);
     let data = [];
@@ -72,7 +69,6 @@ export default function Shop() {
       setProduct(
         data.filter((x) => x.finalprice >= min && x.finalprice <= max)
       );
-    console.log(product);
   }
 
   function getPriceFilter(e) {
@@ -130,9 +126,7 @@ export default function Shop() {
       setSubCategory(SubCategoryStateData.slice(1).reverse());
     }
   }
-  console.log(MainCategoryStateData);
   useEffect(() => {
-    console.log("useEffect called");
     getApiData();
     // eslint-disable-next-line
   }, [
@@ -141,7 +135,6 @@ export default function Shop() {
     MainCategoryStateData.length,
     SubCategoryStateData.length,
   ]);
-  console.log(mc);
   return (
     <>
       <div className="container-fluid">

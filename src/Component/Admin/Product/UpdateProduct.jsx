@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getMaincategory } from "../../../store/ActionCreators/MainCategoryActionCreator";
 import { getBrand } from "../../../store/ActionCreators/BrandActionCreator";
 import { getSubcategory } from "../../../store/ActionCreators/SubCategoryActionCreator";
-let count = 0;
+
 export default function CreateProduct() {
   const [data, setData] = useState({});
   let navigate = useNavigate();
@@ -99,7 +99,6 @@ export default function CreateProduct() {
     SubCategoryStateData.length,
     BrandStateData.length,
   ]);
-  console.log(`component did updated ${++count} times`);
   return (
     <>
       <div className="container-fluid my-3">

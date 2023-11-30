@@ -19,7 +19,6 @@ export default function Home() {
     getApiData();
     // eslint-disable-next-line
   }, [ProductStateData.length]);
-  console.log(ProductStateData);
   return (
     <>
       {/* <!-- Carousel Start --> */}
