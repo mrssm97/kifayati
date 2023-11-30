@@ -19,6 +19,9 @@ export default function Shop() {
   const [max, setMax] = useState(1000);
   const [flag, setFlag] = useState(true);
   const [search, setSearch] = useState("");
+  const [activeSubBt, setActiveSubBt] = useState(null);
+  const [activeMainBt, setActiveMainBt] = useState(null);
+  const [activeBrandBt, setActiveBrandBt] = useState(null);
 
   let dispatch = useDispatch();
   let BrandStateData = useSelector((state) => state.BrandStateData);
@@ -27,7 +30,7 @@ export default function Shop() {
     (state) => state.MainCategoryStateData
   );
   let ProductStateData = useSelector((state) => state.ProductStateData);
-  function categoryFilter(mc, sc, br, min = -1, max = -1) {
+  function categoryFilter(mc, sc, br, e, min = -1, max = -1) {
     setMc(mc);
     setSc(sc);
     setBr(br);
@@ -142,15 +145,20 @@ export default function Shop() {
           <div className="col-md-3">
             <div className="list-group mt-3">
               <p
-                className="list-group-item list-group-item-action active"
+                className="list-group-item list-group-item-action bg-primary text-light"
                 aria-current="true"
               >
                 Main Category
               </p>
 
               <button
-                className="list-group-item list-group-item-action"
-                onClick={() => categoryFilter("All", sc, br)}
+                className={`${
+                  activeSubBt === "All" ? "active" : ""
+                } list-group-item  list-group-item-action`}
+                onClick={() => {
+                  categoryFilter("All", sc, br);
+                  setActiveMainBt("All");
+                }}
               >
                 All
               </button>
@@ -158,8 +166,13 @@ export default function Shop() {
                 return (
                   <button
                     key={index}
-                    className="list-group-item list-group-item-action"
-                    onClick={() => categoryFilter(item.name, sc, br)}
+                    className={`${
+                      item.name === activeMainBt ? "active" : ""
+                    } list-group-item  list-group-item-action`}
+                    onClick={() => {
+                      categoryFilter(item.name, sc, br);
+                      setActiveMainBt(item.name);
+                    }}
                   >
                     {item.name}
                   </button>
@@ -168,15 +181,20 @@ export default function Shop() {
             </div>
             <div className="list-group mt-3">
               <p
-                className="list-group-item list-group-item-action active"
+                className="list-group-item list-group-item-action bg-primary text-light"
                 aria-current="true"
               >
                 Sub Category
               </p>
 
               <button
-                className="list-group-item list-group-item-action"
-                onClick={() => categoryFilter(mc, "All", br)}
+                className={`${
+                  activeSubBt === "All" ? "active" : ""
+                } list-group-item  list-group-item-action`}
+                onClick={() => {
+                  categoryFilter(mc, "All", br);
+                  setActiveSubBt("All");
+                }}
               >
                 All
               </button>
@@ -184,8 +202,13 @@ export default function Shop() {
                 return (
                   <button
                     key={index}
-                    onClick={() => categoryFilter(mc, item.name, br)}
-                    className="list-group-item list-group-item-action"
+                    onClick={(e) => {
+                      categoryFilter(mc, item.name, br, e);
+                      setActiveSubBt(item.name);
+                    }}
+                    className={`${
+                      item.name === activeSubBt ? "active" : ""
+                    } list-group-item list-group-item-action`}
                   >
                     {item.name}
                   </button>
@@ -194,15 +217,20 @@ export default function Shop() {
             </div>
             <div className="list-group mt-3">
               <p
-                className="list-group-item list-group-item-action active"
+                className="list-group-item list-group-item-action bg-primary text-light"
                 aria-current="true"
               >
                 Brand
               </p>
 
               <button
-                className="list-group-item list-group-item-action"
-                onClick={() => categoryFilter(mc, sc, "All")}
+                className={`${
+                  activeBrandBt === "All" ? "active" : ""
+                } list-group-item  list-group-item-action`}
+                onClick={() => {
+                  categoryFilter(mc, sc, "All");
+                  setActiveBrandBt("All");
+                }}
               >
                 All
               </button>
@@ -210,8 +238,13 @@ export default function Shop() {
                 return (
                   <button
                     key={index}
-                    onClick={() => categoryFilter(mc, sc, item.name)}
-                    className="list-group-item list-group-item-action"
+                    onClick={() => {
+                      categoryFilter(mc, sc, item.name);
+                      setActiveBrandBt(item.name);
+                    }}
+                    className={`${
+                      item.name === activeBrandBt ? "active" : ""
+                    } list-group-item  list-group-item-action`}
                   >
                     {item.name}
                   </button>

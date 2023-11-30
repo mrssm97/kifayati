@@ -33,10 +33,10 @@ export default function User() {
     <>
       <div className="container-fluid my-3">
         <div className="row">
-          <div className="col-md-2">
+          <div className="col-md-3">
             <Sidebar />
           </div>
-          <div className="col-md-10">
+          <div className="col-md-9">
             <h5 className="bg-primary p-2 text-light text-center">User List</h5>
             <div className="table-responsive">
               <table className="table table-bordered">

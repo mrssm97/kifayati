@@ -73,10 +73,10 @@ export default function ShowCheckout() {
       {" "}
       <div className="container-fluid my-3">
         <div className="row">
-          <div className="col-md-2">
+          <div className="col-md-3">
             <Sidebar />
           </div>
-          <div className="col-md-10">
+          <div className="col-md-9">
             <h5 className="bg-primary w-100 p-2 text-light text-center">
               Checkout Query
             </h5>
