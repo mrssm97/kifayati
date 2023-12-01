@@ -153,7 +153,7 @@ export default function Shop() {
 
               <button
                 className={`${
-                  activeSubBt === "All" ? "active" : ""
+                  activeMainBt === "All" ? "active" : ""
                 } list-group-item  list-group-item-action`}
                 onClick={() => {
                   categoryFilter("All", sc, br);
