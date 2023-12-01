@@ -48,7 +48,7 @@ export default function About() {
 
                 <div className="ps-4">
                   <h5 className="mb-3">Fast Delivery</h5>
-                  <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                  <p>Get Your Product On Your Doorstep within 2 Days.</p>
                 </div>
               </div>
             </div>
@@ -62,7 +62,10 @@ export default function About() {
                 </i>
                 <div className="ps-4">
                   <h5 className="mb-3">100% Refund Policy</h5>
-                  <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                  <p>
+                    {" "}
+                    You can Refund Your Product Within 7 Days. T&C Apllied.
+                  </p>
                 </div>
               </div>
             </div>
@@ -76,7 +79,7 @@ export default function About() {
                 </i>
                 <div className="ps-4">
                   <h5 className="mb-3">100% Original Product</h5>
-                  <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                  <p> Get 100% Original Product From Various Brands.</p>
                 </div>
               </div>
             </div>
@@ -96,7 +99,7 @@ export default function About() {
               >
                 <img
                   className="position-absolute img-fluid w-100 h-100"
-                  src="/img/about.jpg"
+                  src="/img/about-us.jpeg"
                   style={{ objectFit: "cover" }}
                   alt=""
                 />
@@ -114,13 +117,15 @@ export default function About() {
             <div className="col-lg-6">
               <h6 className="text-primary text-uppercase"> About Us </h6>
               <h1 className="mb-4">
-                <span className="text-primary">CarServ</span> Is The Best Place
-                For Your Auto Care
+                <span className="text-primary">Kifayati.com</span> Is The Best
+                Place for shopping online.
               </h1>
               <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                sed stet lorem sit clita duo justo magna dolore erat amet
+                At Your Kifayati.com, we believe in the power of choice and
+                quality. We strive to deliver a diverse range of products, right
+                at your doorstep, with utmost ease and efficiency. We understand
+                that in today’s fast-paced world, convenience is key, and we are
+                here to make your life a little simpler.
               </p>
               <div className="row g-4 mb-3 pb-3">
                 <div className="col-12 wow fadeIn" data-wow-delay="0.1s">
@@ -132,8 +137,10 @@ export default function About() {
                       <span className="fw-bold text-secondary">01</span>
                     </div>
                     <div className="ps-3">
-                      <h6>Professional & Expert</h6>
-                      <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                      <h6>Fast Delivery</h6>
+                      <span>
+                        Get Your Product On Your Doorstep within 2 Days.
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -146,8 +153,10 @@ export default function About() {
                       <span className="fw-bold text-secondary">02</span>
                     </div>
                     <div className="ps-3">
-                      <h6>Quality Servicing Center</h6>
-                      <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                      <h6>100% Refund Policy</h6>
+                      <span>
+                        You can Refund Your Product Within 7 Days. T&C Apllied.
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -160,15 +169,14 @@ export default function About() {
                       <span className="fw-bold text-secondary">03</span>
                     </div>
                     <div className="ps-3">
-                      <h6>Awards Winning Workers</h6>
-                      <span>Diam dolor diam ipsum sit amet diam et eos</span>
+                      <h6>100% Original Product</h6>
+                      <span>
+                        Get 100% Original Product From Various Brands.
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <button className="btn btn-primary py-3 px-5">
-                Read More<i className="fa fa-arrow-right ms-3"></i>
-              </button>
             </div>
           </div>
         </div>
